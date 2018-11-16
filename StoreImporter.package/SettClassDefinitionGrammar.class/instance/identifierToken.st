@@ -1,0 +1,3 @@
+grammar
+identifierToken
+	^ whitespace , identifier

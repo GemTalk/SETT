@@ -1,0 +1,1 @@
+The public entry point for SETT.

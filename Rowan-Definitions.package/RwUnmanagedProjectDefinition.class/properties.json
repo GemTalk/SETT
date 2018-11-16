@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RwProjectDefinition",
+	"category" : "Rowan-Definitions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RwUnmanagedProjectDefinition",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I represent a connection to the SQL database that houses the Store repository.

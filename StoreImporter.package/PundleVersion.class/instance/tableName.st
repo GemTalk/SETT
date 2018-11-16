@@ -1,0 +1,3 @@
+querying
+tableName
+	self subclassResponsibility

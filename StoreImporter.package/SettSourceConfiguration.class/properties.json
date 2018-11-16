@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "MartinMcClure 4/23/2018 17:44",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dbHost",
+		"dbPort",
+		"dbName",
+		"dbUser",
+		"dbPassword",
+		"dbType",
+		"dbListener",
+		"prefixTablesWithDbName"
+	],
+	"name" : "SettSourceConfiguration",
+	"type" : "normal"
+}

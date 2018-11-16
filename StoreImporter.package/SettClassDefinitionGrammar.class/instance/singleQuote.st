@@ -1,0 +1,3 @@
+grammar
+singleQuote
+	^ $' asPParser

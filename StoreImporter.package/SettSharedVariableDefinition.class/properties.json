@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"variableName",
+		"classFullName"
+	],
+	"name" : "SettSharedVariableDefinition",
+	"type" : "normal"
+}

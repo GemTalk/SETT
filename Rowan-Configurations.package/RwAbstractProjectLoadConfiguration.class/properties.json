@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "RwAbstractProjectConfiguration",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"conditionalPackages",
+		"conditionalPackageMatchers",
+		"conditionalPackageMapSpecs",
+		"conditionalPackageMapSpecMatchers"
+	],
+	"name" : "RwAbstractProjectLoadConfiguration",
+	"type" : "normal"
+}

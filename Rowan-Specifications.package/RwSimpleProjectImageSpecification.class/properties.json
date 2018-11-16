@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RwImageSpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RwSimpleProjectImageSpecification",
+	"type" : "normal"
+}

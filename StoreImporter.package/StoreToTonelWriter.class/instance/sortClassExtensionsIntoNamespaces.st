@@ -1,0 +1,3 @@
+action
+sortClassExtensionsIntoNamespaces
+	self sortDefinitionsIntoNamespaceWith: package classExtensions position: 2

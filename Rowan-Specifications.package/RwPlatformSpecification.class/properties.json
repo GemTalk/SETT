@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RwSpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RwPlatformSpecification",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+fetchMappings
+	^ namespaceMap keys

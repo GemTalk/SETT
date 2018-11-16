@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 4/24/2018 11:06",
+	"super" : "Object",
+	"category" : "Sett-Oracle-Proxy",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resultStream",
+		"inputStream",
+		"dbConnection"
+	],
+	"name" : "SettOracleProxy",
+	"type" : "normal"
+}

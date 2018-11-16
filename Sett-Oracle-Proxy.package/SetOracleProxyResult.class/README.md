@@ -1,0 +1,1 @@
+I represent the results of quering an Oracle database with the SOP tool.

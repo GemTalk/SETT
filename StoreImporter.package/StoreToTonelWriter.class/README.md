@@ -1,0 +1,1 @@
+I am responsible for taking a StoreClass and writing this in Tonel format on disk.

@@ -1,0 +1,3 @@
+accessing
+blessingType
+	^ pundleVersion blessingType

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SettStoreBlob",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SettOracle11StoreBlob",
+	"type" : "normal"
+}

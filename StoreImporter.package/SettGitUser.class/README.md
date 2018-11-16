@@ -1,0 +1,1 @@
+I represent a git author and associated email address.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RwRepositorySpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RwDiskRepositorySpecification",
+	"type" : "normal"
+}

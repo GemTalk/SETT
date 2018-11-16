@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pattern",
+		"patternMatchBlock"
+	],
+	"name" : "RwAbstractConfigurationPlatformAttributeMatcher",
+	"type" : "normal"
+}

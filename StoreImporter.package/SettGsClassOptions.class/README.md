@@ -1,0 +1,1 @@
+I represent class options for a GemStone class definition

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "MartinMcClure 4/24/2018 18:24",
+	"super" : "SettSourceConfiguration",
+	"category" : "SettExamples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SettExampleSourceConfiguration",
+	"type" : "normal"
+}

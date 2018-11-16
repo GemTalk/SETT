@@ -1,0 +1,3 @@
+grammar
+className
+	^ symbol

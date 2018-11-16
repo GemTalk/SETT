@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packageNames",
+		"packageMapSpecs",
+		"visitedConfigurationNames",
+		"platformAttributes",
+		"definedGroupNames",
+		"groupNames",
+		"configurationNames",
+		"configurationBasePath"
+	],
+	"name" : "RwProjectLoadConfigurationVisitor",
+	"type" : "normal"
+}

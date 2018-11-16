@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Magnitude",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"normalVersion",
+		"preReleaseVersion",
+		"buildVersion"
+	],
+	"name" : "RwSemanticVersionNumber",
+	"type" : "normal"
+}

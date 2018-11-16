@@ -1,0 +1,3 @@
+enumerating
+allPackageVersionsDo: aBlock
+	pundleVersion allPackageVersionsDo: aBlock

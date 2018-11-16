@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "RwDefinition",
+	"category" : "Rowan-Definitions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classMethodDefinitions",
+		"instanceMethodDefinitions"
+	],
+	"name" : "RwAbstractClassDefinition",
+	"type" : "normal"
+}

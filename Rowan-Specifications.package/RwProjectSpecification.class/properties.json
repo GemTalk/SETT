@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "RwSpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"specName",
+		"version",
+		"projectUrl",
+		"platformSpec",
+		"configsPath",
+		"specsPath",
+		"repoSpec",
+		"repoPath",
+		"comment",
+		"imageSpec",
+		"defaultConfigurationNames",
+		"defaultGroupNames"
+	],
+	"name" : "RwProjectSpecification",
+	"type" : "normal"
+}

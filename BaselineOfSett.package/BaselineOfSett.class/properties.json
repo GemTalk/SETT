@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "MartinMcClure 4/23/2018 17:08",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfSett",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfSett",
+	"type" : "normal"
+}

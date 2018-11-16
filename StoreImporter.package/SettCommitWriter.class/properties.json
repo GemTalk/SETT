@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "MartinMcClure 5/1/2018 17:06",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gitRepository",
+		"storeCommit",
+		"databaseFacade",
+		"logger",
+		"rowanDirectories",
+		"destinationConfiguration"
+	],
+	"name" : "SettCommitWriter",
+	"type" : "normal"
+}

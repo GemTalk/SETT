@@ -1,0 +1,3 @@
+private-conversion
+rowanClassExtensionFor: classDefinition
+	^ RwClassExtensionDefinition newForClassNamed: classDefinition classSimpleName

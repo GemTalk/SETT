@@ -1,0 +1,3 @@
+private-writing
+typeOf: aClassOrExtensionDefinition
+	^ aClassOrExtensionDefinition tonelLabel

@@ -1,0 +1,1 @@
+I represent a mapping of a namespace to a mangled directory name.

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AaronBlakeman 3/30/2018 09:10",
+	"super" : "STONWriter",
+	"category" : "Rowan-Tonel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aliases"
+	],
+	"name" : "RwTonelSTONWriter",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StoreDatabaseFacade",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StorePostgresFacade",
+	"type" : "normal"
+}

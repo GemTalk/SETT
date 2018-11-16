@@ -1,0 +1,1 @@
+A VW class  as extracted from Store.

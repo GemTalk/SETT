@@ -1,0 +1,1 @@
+I represent a method that was previously stored in Store.

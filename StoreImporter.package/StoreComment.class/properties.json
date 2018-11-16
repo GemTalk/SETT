@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 4/3/2018 09:07",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"commentFromStore",
+		"blessingLevel",
+		"timestamp"
+	],
+	"name" : "StoreComment",
+	"type" : "normal"
+}

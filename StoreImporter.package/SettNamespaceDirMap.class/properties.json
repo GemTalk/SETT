@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 5/31/2018 13:38",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"namespaceMap",
+		"prefix",
+		"attributes"
+	],
+	"name" : "SettNamespaceDirMap",
+	"type" : "normal"
+}

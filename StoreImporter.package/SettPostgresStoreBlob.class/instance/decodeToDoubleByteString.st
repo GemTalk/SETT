@@ -1,0 +1,3 @@
+private
+decodeToDoubleByteString
+	^ SettDoubleByteBlobDecoder decode: blobBytes

@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "MartinMcClure 4/23/2018 17:47",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isNewRepository",
+		"branchName",
+		"repositoryPathString",
+		"rowanSubdirectory",
+		"rowanSourcesDirectory",
+		"rowanConfigsDirectory",
+		"rowanSpecsDirectory",
+		"rowanProjectName",
+		"repositoryBeginDate",
+		"userMapping",
+		"namespaceMapping"
+	],
+	"name" : "SettDestinationConfiguration",
+	"type" : "normal"
+}
