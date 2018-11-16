@@ -1,16 +1,16 @@
 {
-	"commentStamp" : "AaronBlakeman 3/13/2018 12:35",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"commits",
-		"store",
-		"storeRepository",
-		"endDateAndTime"
+		"classes",
+		"extensions",
+		"prefix",
+		"definitions"
 	],
-	"name" : "StoreCommitList",
+	"name" : "SettPackageMap",
 	"type" : "normal"
 }

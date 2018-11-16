@@ -16,7 +16,8 @@
 		"rowanProjectName",
 		"repositoryBeginDate",
 		"userMapping",
-		"namespaceMapping"
+		"namespaceMapping",
+		"includeNamespaceInPackageName"
 	],
 	"name" : "SettDestinationConfiguration",
 	"type" : "normal"

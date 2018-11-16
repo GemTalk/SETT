@@ -1,3 +1,5 @@
 action
 sortClassExtensionsIntoNamespaces
-	self sortDefinitionsIntoNamespaceWith: package classExtensions position: 2
+	self
+		sortDefinitionsIntoNamespaceWith: package classExtensions
+		isDefinition: false

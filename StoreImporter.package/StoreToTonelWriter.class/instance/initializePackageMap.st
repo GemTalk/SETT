@@ -4,9 +4,8 @@ initializePackageMap
 	namespaceMap := destinationConfiguration namespaceMapping.
 	namespaceMap fetchMappings
 		do: [ :settNameSpace | 
-			packageMap
-				at: settNameSpace
-				put:
-					{OrderedCollection new. "holds classes"
-					OrderedCollection new. "holds class extensions"
-					(namespaceMap getPrefixFor: settNameSpace)} ]
+			| aSettPackageMap |
+			aSettPackageMap := SettPackageMap new
+				prefix: (namespaceMap getPrefixFor: settNameSpace);
+				yourself.
+			self addSettPackageMap: aSettPackageMap forNamespace: settNameSpace ]

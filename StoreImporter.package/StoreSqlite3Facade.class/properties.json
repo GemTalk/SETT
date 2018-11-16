@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StoreDatabaseFacade",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StoreSqlite3Facade",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 public
 versionString
-	^ '1.0'
+	^ '1.1'

@@ -15,8 +15,8 @@ splitMethodSource: aMethodDefinition into: aBlock
 		in: declaration originalContents)
 		and: [ "if it's not a unary selector, get one 
 			more word: the final formal parameter" (':+-/\*~<>=@,%|&?!' includes: declaration contents trimRight last) not ].
-	declarationIsComplete not & source atEnd
-		ifTrue: [ self error: 'Method source does not include the method''s selector.' ].
+	"declarationIsComplete not & source atEnd
+		ifTrue: [ self error: 'Method source does not include the method''s selector.' ]."
 	declarationIsComplete ]
 		whileFalse: [ "get separators"
 			[ source atEnd not and: [ source peek isSeparator ] ]

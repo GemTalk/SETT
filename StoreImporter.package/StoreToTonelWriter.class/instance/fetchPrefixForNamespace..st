@@ -1,3 +1,3 @@
 action
 fetchPrefixForNamespace: namespace
-	^ (packageMap at: namespace) third
+	^ (packageMap at: namespace) prefix
