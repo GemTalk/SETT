@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "MartinMcClure 5/5/2018 18:21",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"className",
+		"classComment",
+		"timestamp",
+		"properties",
+		"instanceMethods",
+		"classMethods",
+		"originalCategory"
+	],
+	"name" : "SettClassDefinition",
+	"type" : "normal"
+}

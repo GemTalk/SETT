@@ -1,0 +1,1 @@
+Parse class definition strings into SettClassDefinitions, or just parse a fully-qualified VW namespace name into its components.

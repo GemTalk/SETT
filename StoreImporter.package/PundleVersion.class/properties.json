@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "AaronBlakeman 3/23/2018 14:47",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"timestamp",
+		"version",
+		"username",
+		"blessingLevel",
+		"primaryKey",
+		"pundleName",
+		"comment",
+		"logger"
+	],
+	"name" : "PundleVersion",
+	"type" : "normal"
+}

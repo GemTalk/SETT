@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "MartinMcClure 5/1/2018 15:43",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pathString",
+		"logger"
+	],
+	"name" : "SettGitRepository",
+	"type" : "normal"
+}

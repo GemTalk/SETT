@@ -1,0 +1,1 @@
+I represent mappings between SettStoreUsers and SettGitUsers

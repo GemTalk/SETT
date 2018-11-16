@@ -1,0 +1,1 @@
+I represent a singular store commit.

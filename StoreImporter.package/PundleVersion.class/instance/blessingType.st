@@ -1,0 +1,3 @@
+accessing
+blessingType
+	self subclassResponsibility

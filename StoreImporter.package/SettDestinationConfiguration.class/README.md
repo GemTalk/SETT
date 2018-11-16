@@ -1,0 +1,1 @@
+Specifies where SETT's output should go -- the location of the git repository, whether to create a new empty repository at that location, and what branch name to use when committing. 

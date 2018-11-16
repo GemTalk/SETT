@@ -1,0 +1,1 @@
+A GemStone class  as extracted from Store.

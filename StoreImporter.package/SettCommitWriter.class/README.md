@@ -1,0 +1,1 @@
+Responsible for writing a single Git commit from a StoreCommit.

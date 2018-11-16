@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "AaronBlakeman 5/11/2018 10:13",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"destinationConfiguration",
+		"rowanSourcesDirectory",
+		"rowanConfigsDirectory",
+		"rowanSpecsDirectory",
+		"rowanSubdirectory",
+		"rowanBaseDirectory"
+	],
+	"name" : "RowanDirectoryStructure",
+	"type" : "normal"
+}

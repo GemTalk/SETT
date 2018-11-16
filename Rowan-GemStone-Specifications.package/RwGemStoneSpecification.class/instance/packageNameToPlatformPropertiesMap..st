@@ -1,0 +1,4 @@
+accessing
+packageNameToPlatformPropertiesMap: aDictionary
+
+	packageNameToPlatformPropertiesMap := aDictionary

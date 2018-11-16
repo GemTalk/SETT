@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"blobType",
+		"blobBytes",
+		"dbFacade"
+	],
+	"name" : "SettStoreBlob",
+	"type" : "normal"
+}

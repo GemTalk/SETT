@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 3/13/2018 12:35",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"commits",
+		"store",
+		"storeRepository"
+	],
+	"name" : "StoreCommitList",
+	"type" : "normal"
+}

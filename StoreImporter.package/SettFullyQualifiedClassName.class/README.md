@@ -1,0 +1,1 @@
+A name in the VW namespace scheme. The first element should always be 'Root'.

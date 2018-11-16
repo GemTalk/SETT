@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "MartinMcClure 4/25/2018 09:59",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"allBundleVersions",
+		"allPackageVersions",
+		"allTopLevelPundles",
+		"containingBundleVersions",
+		"containedPundleVersions",
+		"dbFacade",
+		"logger"
+	],
+	"name" : "SettStoreRepository",
+	"type" : "normal"
+}

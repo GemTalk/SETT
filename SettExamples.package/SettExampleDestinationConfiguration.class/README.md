@@ -1,0 +1,1 @@
+Example of a customized configuration of a Git repository. In this class, only the directory name is overridden from the defaults in the superclass.

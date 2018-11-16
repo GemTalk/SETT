@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RwAbstractConfigurationPlatformAttributeMatcher",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RwGemStoneVersionConfigurationPlatformAttributeMatcher",
+	"type" : "normal"
+}

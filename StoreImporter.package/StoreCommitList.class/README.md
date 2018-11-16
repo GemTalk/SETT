@@ -1,0 +1,1 @@
+I hold information about the Store commits before converting them to git commits.

@@ -1,0 +1,3 @@
+grammar
+attributeLines
+	^ attributeLine star

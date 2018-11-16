@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AaronBlakeman 6/19/2018 09:18",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"GsAttributes"
+	],
+	"instvars" : [ ],
+	"name" : "SettGsClassOptions",
+	"type" : "normal"
+}

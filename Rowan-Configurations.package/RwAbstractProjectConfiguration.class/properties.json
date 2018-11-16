@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"comment",
+		"projectName",
+		"version",
+		"configurationNames"
+	],
+	"name" : "RwAbstractProjectConfiguration",
+	"type" : "normal"
+}

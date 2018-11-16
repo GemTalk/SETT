@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "RwRepositorySpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"committish",
+		"committishType",
+		"remote"
+	],
+	"name" : "RwGitRepositorySpecification",
+	"type" : "normal"
+}

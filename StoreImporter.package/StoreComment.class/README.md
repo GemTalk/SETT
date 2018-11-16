@@ -1,0 +1,1 @@
+I represent a comment for a blessing in store.

@@ -1,0 +1,4 @@
+accessing
+addClassExtension: aClassExtensionDefinition
+
+	self addDefinition: aClassExtensionDefinition to: classExtensions

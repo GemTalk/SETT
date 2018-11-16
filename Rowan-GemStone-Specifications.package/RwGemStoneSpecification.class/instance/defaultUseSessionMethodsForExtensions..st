@@ -1,0 +1,4 @@
+accessing
+defaultUseSessionMethodsForExtensions: aBool
+
+	defaultUseSessionMethodsForExtensions := aBool

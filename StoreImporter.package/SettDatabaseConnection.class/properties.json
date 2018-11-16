@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "AaronBlakeman 2/8/2018 12:11",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dbUser",
+		"dbPassword",
+		"dbHost",
+		"dbPort",
+		"dbName",
+		"conn",
+		"dbType",
+		"dbListener",
+		"prefixTablesWithDbName"
+	],
+	"name" : "SettDatabaseConnection",
+	"type" : "normal"
+}

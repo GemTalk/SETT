@@ -1,0 +1,3 @@
+private
+logger
+	^ logger

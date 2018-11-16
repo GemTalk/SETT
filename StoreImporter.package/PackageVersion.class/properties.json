@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 3/23/2018 14:48",
+	"super" : "PundleVersion",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dbFacade",
+		"classDefinitions",
+		"classExtensions"
+	],
+	"name" : "PackageVersion",
+	"type" : "normal"
+}

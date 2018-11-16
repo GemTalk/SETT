@@ -1,0 +1,3 @@
+grammar
+attributeLine
+	^ specialAttributeLine / mundaneAttributeLine

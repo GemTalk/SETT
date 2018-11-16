@@ -1,0 +1,5 @@
+initialization
+initializeForDestinationConfiguration: aDestinationConfiguration
+	destinationConfiguration := aDestinationConfiguration.
+	destinationConfiguration repositoryBeginDate: initialDateAndTime.
+	self initializeGitRepository

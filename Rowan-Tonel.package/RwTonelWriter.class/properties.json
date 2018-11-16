@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "AaronBlakeman 3/29/2018 09:40",
+	"super" : "Object",
+	"category" : "Rowan-Tonel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sourceDir",
+		"packageDir",
+		"packageWriter"
+	],
+	"name" : "RwTonelWriter",
+	"type" : "normal"
+}

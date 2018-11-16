@@ -1,0 +1,1 @@
+I am a StoreSourceConverter that knows specifically how to handle Store's timestamp format.

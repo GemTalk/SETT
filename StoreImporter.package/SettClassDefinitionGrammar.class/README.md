@@ -1,0 +1,1 @@
+Grammar for parsing class definitions from Store.

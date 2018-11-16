@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "RwPlatformSpecification",
+	"category" : "Rowan-GemStone-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"defaultMethodEnv",
+		"defaultSymbolDictName",
+		"defaultUseSessionMethodsForExtensions",
+		"packageNameToPlatformPropertiesMap",
+		"projectOwnerId"
+	],
+	"name" : "RwGemStoneSpecification",
+	"type" : "normal"
+}

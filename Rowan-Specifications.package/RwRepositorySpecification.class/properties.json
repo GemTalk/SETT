@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "RwSpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"repositoryRootPath"
+	],
+	"name" : "RwRepositorySpecification",
+	"type" : "normal"
+}

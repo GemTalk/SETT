@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "AaronBlakeman 3/19/2018 09:25",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"package",
+		"commit",
+		"rowanDirectories",
+		"destinationConfiguration",
+		"packageMap",
+		"namespaceMap",
+		"packageDefs",
+		"logger",
+		"rwPackages"
+	],
+	"name" : "StoreToTonelWriter",
+	"type" : "normal"
+}

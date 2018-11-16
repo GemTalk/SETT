@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "MartinMcClure 5/7/2018 16:15",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inputStream",
+		"outputStream",
+		"codePointOut",
+		"multiplier"
+	],
+	"name" : "SettDoubleByteBlobDecoder",
+	"type" : "normal"
+}

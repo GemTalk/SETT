@@ -1,0 +1,1 @@
+A class or class extension as extracted from Store.

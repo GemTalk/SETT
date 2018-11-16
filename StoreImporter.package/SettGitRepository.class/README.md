@@ -1,0 +1,1 @@
+A Git repository residing at pathString, which may be absolute or relative to CWD.

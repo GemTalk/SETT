@@ -1,0 +1,5 @@
+action
+writeRowanMetadata
+	self writeProjectConfigurationToDisk.
+	self writeProjectSpecificationsToDisk.
+	self writeRowanPropertiesFile

@@ -1,0 +1,4 @@
+*rowan-gemstone-definitions
+_modificationForcingNewClassVersion
+
+	^ RwClassModificationForcingNewClassVersion

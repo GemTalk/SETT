@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "RwSpecification",
+	"category" : "Rowan-Specifications",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"loadedCommitId",
+		"loadedConfigurationNames",
+		"loadedGroupNames",
+		"repositoryUrl"
+	],
+	"name" : "RwImageSpecification",
+	"type" : "normal"
+}

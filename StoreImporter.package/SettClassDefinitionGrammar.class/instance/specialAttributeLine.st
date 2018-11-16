@@ -1,0 +1,3 @@
+grammar
+specialAttributeLine
+	^ vwInstanceVariableLine / gemstoneInstanceVariableLine / gemstoneConstraintsLine

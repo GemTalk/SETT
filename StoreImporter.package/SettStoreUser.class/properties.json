@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AaronBlakeman 5/25/2018 08:54",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"username"
+	],
+	"name" : "SettStoreUser",
+	"type" : "normal"
+}

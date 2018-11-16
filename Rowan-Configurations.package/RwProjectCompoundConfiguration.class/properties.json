@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "RwAbstractProjectConfiguration",
+	"category" : "Rowan-Configurations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packageNames"
+	],
+	"name" : "RwProjectCompoundConfiguration",
+	"type" : "normal"
+}
