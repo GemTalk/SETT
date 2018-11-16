@@ -13,7 +13,8 @@
 		"storePublishes",
 		"logger",
 		"rowanDirectories",
-		"initialDateAndTime"
+		"initialDateAndTime",
+		"endDateAndTime"
 	],
 	"name" : "Sett",
 	"type" : "normal"

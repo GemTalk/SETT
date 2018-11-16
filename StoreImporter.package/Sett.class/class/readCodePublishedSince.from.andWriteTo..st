@@ -4,11 +4,9 @@ readCodePublishedSince: aDateAndTime from: aSourceConfiguration andWriteTo: aDes
 	aSourceConfiguration is typically an instance of a subclass of SettSourceConfiguration,
 	and aDestinationConfiguration an instance of a subclass of SettDestinationConfiguration."
 
-	| worker |
-	worker := self new.
-	worker
-		withInitialDateAndTime: aDateAndTime;
-		initializeForSourceConfiguration: aSourceConfiguration;
-		initializeForDestinationConfiguration: aDestinationConfiguration;
-		findAllStorePublishes;
-		writePublishesToGit
+	self
+		readCodePublishedBetweenStartDateAndTime: aDateAndTime 
+		andEndDateAndTime: (DateAndTime tomorrow)
+		from: aSourceConfiguration
+		andWriteTo: aDestinationConfiguration
+	

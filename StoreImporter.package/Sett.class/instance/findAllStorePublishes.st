@@ -6,5 +6,6 @@ findAllStorePublishes
 	storeRepository logTotalsTo: logger.
 	storePublishes := StoreCommitList
 		forRepository: storeRepository
-		topLevelPundlesSince: initialDateAndTime.
+		topLevelPundlesSince: initialDateAndTime
+		endingAt: endDateAndTime.
 	storePublishes logNumberOfCommitsTo: logger

@@ -5,4 +5,4 @@ writePackageToDisk
 	packageDefs
 		do: [ :entry | 
 			writer := RwTonelWriter on: rowanDirectories rowanSourcesDirectory.
-			writer writePackage: entry ].
+			writer writePackage: entry ]

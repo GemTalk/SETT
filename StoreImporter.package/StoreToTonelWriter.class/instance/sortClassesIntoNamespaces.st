@@ -1,3 +1,5 @@
 action
 sortClassesIntoNamespaces
-	self sortDefinitionsIntoNamespaceWith: package classDefinitions position: 1
+	self
+		sortDefinitionsIntoNamespaceWith: package classDefinitions
+		isDefinition: true

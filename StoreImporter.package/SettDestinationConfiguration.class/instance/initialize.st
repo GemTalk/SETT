@@ -6,6 +6,7 @@ initialize
 	rowanProjectName := 'StoreExport'.
 	isNewRepository := true.
 	branchName := 'fromStore'.
+	includeNamespaceInPackageName := false.
 
 	"The following configuration parameters should not be changed"
 	rowanSubdirectory := 'rowan'.
