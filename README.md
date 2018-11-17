@@ -12,7 +12,7 @@ SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code fr
 4. Disk space: Ensure that you have sufficient disk space to hold the entire contents of your repository.
 5. Store access: You must provide credentials for a Store user that has access to the repository to be imported.  Ideally, this user will be a read-only user.
 
-## Postgres
+## Installation for use on Postgres backed Store DB
 
 ```smalltalk
 Metacello new 
@@ -21,7 +21,7 @@ Metacello new
   load.
 ```
 
-## Oracle
+## Installation for use on Oracle backed Store DB
 
 Work in progress
 
