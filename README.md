@@ -72,11 +72,23 @@ _SettExampleDestinationConfiguration_ as an example:
 6. Additional SETT configuration options are available and documented in the [wiki](https://github.com/GemTalk/SETT/wiki).
 
 
-## Full example
+## Simple example
 ```smalltalk
 |source destination |
 source := SettExampleSourceConfiguration new.
 destination := SettExampleDestinationConfiguration new.
+
+source
+ dbHost: 'db.example.com';
+ dbName: 'databaseName';
+ dbUser: 'aReadOnlyUser';
+ dbPassword: 'aPassword';
+
+dest
+ repositoryPathString: './StoreExport';
+ rowanProjectName: 'StoreExport';
+ userMapping: settUserMap ;
+ namespaceMapping: settNamespaceMap.
 
 Sett
   readCodePublishedSince: (DateAndTime fromString: 'Jan 1 2018')
