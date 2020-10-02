@@ -3,7 +3,7 @@ executeSqlplusQuery: aQuery
 	"Write the results of aQuery to a file for processing.  Doesn't use OSSUnixSubProcess output
 	because it appears to deadlock?"
 
-	| process fullCommand exitStatus |
+	| process fullCommand |
 	fullCommand := self sopCommand , ' "' , aQuery , '"'.
 	self resetResultStream.
 	(process := OSSUnixSubprocess new)
@@ -16,8 +16,8 @@ executeSqlplusQuery: aQuery
 	dbConnection dbType = 'oracle' & (dbConnection dbName ~= nil)
 		ifTrue: [ process environmentAt: 'SETSCHEMA' put: dbConnection dbName ].
 	process run.
-	exitStatus := process waitForExit.
-	exitStatus = 0
+	process waitForExit.
+	process exitStatusInterpreter isSuccess
 		ifFalse: [ self error: 'Oracle proxy connector failed to connect.' ].
 	resultStream
 		flush;
