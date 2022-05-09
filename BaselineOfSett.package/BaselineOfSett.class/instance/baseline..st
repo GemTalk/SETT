@@ -24,9 +24,9 @@ baseline: spec
 					with: [ spec
 						repository: 'github://kursjan/petitparser2'
 						];
-				configuration: 'OSSubprocess'
+				baseline: 'OSSubprocess'
 					with: [ spec
-						className: #ConfigurationOfOSSubprocess;
-						versionString: #stable;
-						repository: 'github://marianopeck/OSSubprocess:master/repository' ];
+"						className: #ConfigurationOfOSSubprocess;"
+"						versionString: #stable;"
+						repository: 'github://pharo-contributions/OSSubprocess:master/repository' ];
 				baseline: 'P3' with: [ spec repository: 'github://svenvc/P3' ] ]
