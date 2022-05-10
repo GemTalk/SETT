@@ -26,7 +26,5 @@ baseline: spec
 						];
 				baseline: 'OSSubprocess'
 					with: [ spec
-"						className: #ConfigurationOfOSSubprocess;"
-"						versionString: #stable;"
 						repository: 'github://pharo-contributions/OSSubprocess:master/repository' ];
 				baseline: 'P3' with: [ spec repository: 'github://svenvc/P3' ] ]
