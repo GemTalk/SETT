@@ -2,4 +2,4 @@ accessing
 resultStream
 
 	^ resultStream
-		ifNil: [ resultStream := StandardFileStream forceNewFileNamed: self outputFilename ]
+		ifNil: [ self resetResultStream ]

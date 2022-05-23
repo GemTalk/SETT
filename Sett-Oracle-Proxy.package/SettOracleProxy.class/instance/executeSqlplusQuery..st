@@ -12,13 +12,19 @@ executeSqlplusQuery: aQuery
 		environmentAt: 'SETUSER' put: dbConnection dbUser;
 		environmentAt: 'SETFILELOCATION' put: self outputFilename;
 		environmentAt: 'LD_LIBRARY_PATH' put: 'lib';
-		shellCommand: fullCommand.	"Using a shell for variable expansion"
-	dbConnection dbType = 'oracle' & (dbConnection dbName ~= nil)
+		shellCommand: fullCommand. "Using a shell for variable expansion"
+	(dbConnection dbType = 'oracle' and: [ dbConnection dbName notNil ]) 
 		ifTrue: [ process environmentAt: 'SETSCHEMA' put: dbConnection dbName ].
-	process run.
-	process waitForExit.
-	process exitStatusInterpreter isSuccess
-		ifFalse: [ self error: 'Oracle proxy connector failed to connect.' ].
+	process
+		redirectStdout;
+		redirectStderr;
+		runAndWaitOnExitDo: [ :theProcess :outString :errString | 
+			theProcess isSuccess ifFalse: [ 
+					"OSSUnixProcessExitStatus has a nice #printOn: "
+					self error:
+							'Oracle proxy connector failed to connect. Exit status: '
+							, theProcess exitStatusInterpreter printString , '  stderr: '
+							, errString ] ].
 	resultStream
 		flush;
 		close.

@@ -8,7 +8,11 @@
 	"instvars" : [
 		"resultStream",
 		"inputStream",
-		"dbConnection"
+		"dbConnection",
+		"serverName",
+		"dbName",
+		"username",
+		"password"
 	],
 	"name" : "SettOracleProxy",
 	"type" : "normal"
