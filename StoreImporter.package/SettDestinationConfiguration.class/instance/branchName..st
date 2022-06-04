@@ -1,3 +1,3 @@
-accessing
-branchName: anObject
-	branchName := anObject
+initialization
+branchName: aString
+	branchName := aString

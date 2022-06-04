@@ -1,0 +1,4 @@
+accessing
+tonelWriterClass
+
+	^ tonelWriterClass

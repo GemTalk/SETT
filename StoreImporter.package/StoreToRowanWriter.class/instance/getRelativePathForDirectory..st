@@ -1,5 +1,5 @@
 action
 getRelativePathForDirectory: aDirectory
 	| baseDir |
-	baseDir := destinationConfiguration rowanSubdirectory.
+	baseDir := destinationConfiguration rowanSubdirectoryName.
 	^ baseDir , '/' , aDirectory

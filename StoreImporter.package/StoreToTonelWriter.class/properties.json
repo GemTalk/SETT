@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "AaronBlakeman 3/19/2018 09:25",
-	"super" : "Object",
+	"super" : "AbstractStoreToTonelWriter",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -10,8 +10,6 @@
 		"commit",
 		"rowanDirectories",
 		"destinationConfiguration",
-		"packageMap",
-		"namespaceMap",
 		"packageDefs",
 		"logger",
 		"rwPackages"

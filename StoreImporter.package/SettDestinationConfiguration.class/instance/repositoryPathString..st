@@ -1,3 +1,3 @@
-accessing
-repositoryPathString: anObject
-	repositoryPathString := anObject
+initialization
+repositoryPathString: aString
+	repositoryPathString := aString

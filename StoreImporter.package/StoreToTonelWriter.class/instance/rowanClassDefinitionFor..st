@@ -16,6 +16,11 @@ rowanClassDefinitionFor: classDefinition
 	rwClassDefinition gs_constraints: classDefinition gs_constraints.
 	rwClassDefinition gs_options: classDefinition gs_options.
 	rwClassDefinition propertyAt: 'originalCategory' put: classDefinition originalCategory.
-	rwClassDefinition propertyAt: 'vw_namespace' put: (classDefinition vw_namespace).
+	rwClassDefinition propertyAt: 'vw_namespace' put: (classDefinition vw_namespace definitionString).
+	
+	classDefinition propertyAt: 'sett_transient_className'
+							ifPresent: [ :altClassName | rwClassDefinition name: altClassName ].
+	classDefinition propertyAt: 'sett_transient_superclassName'
+							ifPresent: [ :altSuperclassName | rwClassDefinition superclassName: altSuperclassName ].
 
 	^ rwClassDefinition

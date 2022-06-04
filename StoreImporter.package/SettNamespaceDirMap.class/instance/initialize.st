@@ -1,7 +1,9 @@
 accessing
 initialize
-	namespaceMap
-		ifNil: [ namespaceMap := Dictionary new.
-			namespaceMap
-				at: (SettNamespace fromString: 'Root')
-				put: '' -> Array new ]
+
+	namespaceMap ifNil: [ 
+		namespaceMap := Dictionary new.
+		self
+			addMappingForNamespaceString: 'Root'
+			prefix: ''
+			attributes: #(  ) ]

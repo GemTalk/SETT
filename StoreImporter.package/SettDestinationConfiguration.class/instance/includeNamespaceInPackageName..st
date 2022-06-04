@@ -1,3 +1,0 @@
-accessing
-includeNamespaceInPackageName: anObject
-	includeNamespaceInPackageName := anObject

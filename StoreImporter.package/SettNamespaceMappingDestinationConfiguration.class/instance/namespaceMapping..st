@@ -1,0 +1,3 @@
+initialization
+namespaceMapping: aSettNamespaceDirMap
+	namespaceMapping := aSettNamespaceDirMap

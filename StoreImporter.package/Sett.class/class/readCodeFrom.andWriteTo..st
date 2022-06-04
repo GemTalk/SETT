@@ -4,7 +4,7 @@ readCodeFrom: aSourceConfiguration andWriteTo: aDestinationConfiguration
 	aSourceConfiguration is typically an instance of a subclass of SettSourceConfiguration,
 	and aDestinationConfiguration an instance of a subclass of SettDestinationConfiguration."
 
-	self
+	^self
 		readCodePublishedSince: (DateAndTime fromString: 'Jan 1 1901')
 		from: aSourceConfiguration
 		andWriteTo: aDestinationConfiguration

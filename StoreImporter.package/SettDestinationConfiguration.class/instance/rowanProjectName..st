@@ -1,3 +1,3 @@
-accessing
-rowanProjectName: anObject
-	rowanProjectName := anObject
+initialization
+rowanProjectName: aString
+	rowanProjectName := aString

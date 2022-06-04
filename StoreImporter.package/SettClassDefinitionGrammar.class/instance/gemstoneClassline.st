@@ -1,5 +1,6 @@
 grammar
 gemstoneClassline
-	^ gemstoneSuperClass , whitespace
+	^ gemstoneSuperClass
+		, whitespace
 		, ('subclass:' asPParser / 'byteSubclass:' asPParser / 'indexableSubclass:' asPParser)
-		, stringLiteral
+		, (stringLiteral / symbol)

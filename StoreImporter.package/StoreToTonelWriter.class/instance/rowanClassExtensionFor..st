@@ -1,3 +1,8 @@
 private-conversion
 rowanClassExtensionFor: classDefinition
-	^ RwClassExtensionDefinition newForClassNamed: classDefinition classSimpleName
+
+	| className |
+	className := classDefinition
+		             propertyAt: 'sett_transient_className'
+		             ifAbsent: [ classDefinition classSimpleName ].
+	^ RwClassExtensionDefinition newForClassNamed: className

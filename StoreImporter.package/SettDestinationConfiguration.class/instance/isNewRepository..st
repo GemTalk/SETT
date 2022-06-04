@@ -1,3 +1,3 @@
-accessing
+initialization
 isNewRepository: anObject
 	isNewRepository := anObject

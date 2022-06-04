@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "MartinMcClure 4/24/2018 18:20",
-	"super" : "SettDestinationConfiguration",
+	"super" : "SettNamespaceMappingDestinationConfiguration",
 	"category" : "SettExamples",
 	"classinstvars" : [ ],
 	"pools" : [ ],

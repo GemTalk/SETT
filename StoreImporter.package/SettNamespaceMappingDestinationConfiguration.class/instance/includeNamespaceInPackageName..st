@@ -1,0 +1,3 @@
+initialization
+includeNamespaceInPackageName: aBoolean
+	includeNamespaceInPackageName := aBoolean

@@ -1,3 +1,3 @@
-accessing
-repositoryBeginDate: anObject
-	repositoryBeginDate := anObject
+initialization
+repositoryBeginDate: aDateAndTime
+	repositoryBeginDate := aDateAndTime

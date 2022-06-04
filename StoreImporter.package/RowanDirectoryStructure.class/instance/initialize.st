@@ -4,18 +4,18 @@ initialize
 
 	| baseFsDir baseRowanDir |
 	baseFsDir := destinationConfiguration repositoryPathString.
-	baseRowanDir := baseFsDir , '/' , destinationConfiguration rowanSubdirectory.
+	baseRowanDir := baseFsDir , '/' , destinationConfiguration rowanSubdirectoryName.
 	rowanSubdirectory := self
-		createDirectoryFor: destinationConfiguration rowanSubdirectory
+		createDirectoryFor: destinationConfiguration rowanSubdirectoryName
 		within: baseFsDir.
 
 	"And then build the rowan structure"
 	rowanSourcesDirectory := self
-		createDirectoryFor: destinationConfiguration rowanSourcesDirectory
+		createDirectoryFor: destinationConfiguration rowanSourcesDirectoryName
 		within: baseRowanDir.
 	rowanConfigsDirectory := self
-		createDirectoryFor: destinationConfiguration rowanConfigsDirectory
+		createDirectoryFor: destinationConfiguration rowanConfigsDirectoryName
 		within: baseRowanDir.
 	rowanSpecsDirectory := self
-		createDirectoryFor: destinationConfiguration rowanSpecsDirectory
+		createDirectoryFor: destinationConfiguration rowanSpecsDirectoryName
 		within: baseRowanDir

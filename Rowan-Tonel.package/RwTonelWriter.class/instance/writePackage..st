@@ -1,6 +1,6 @@
 public
 writePackage: aDefinition
-	packageDir := sourceDir / aDefinition key.
+	packageDir := sourceDir / (self replaceFileDelimiterIn: aDefinition key).
 	self createDirectory: packageDir.
 	self writePackageDefinition: aDefinition to: packageDir.
 	aDefinition classDefinitions

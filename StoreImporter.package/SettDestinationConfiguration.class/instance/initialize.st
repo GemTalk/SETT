@@ -6,10 +6,11 @@ initialize
 	rowanProjectName := 'StoreExport'.
 	isNewRepository := true.
 	branchName := 'fromStore'.
-	includeNamespaceInPackageName := false.
 
 	"The following configuration parameters should not be changed"
-	rowanSubdirectory := 'rowan'.
-	rowanSourcesDirectory := 'sources'.
-	rowanConfigsDirectory := 'configs'.
-	rowanSpecsDirectory := 'specs'
+	rowanSubdirectoryName := 'rowan'.
+	rowanSourcesDirectoryName := 'sources'.
+	rowanConfigsDirectoryName := 'configs'.
+	rowanSpecsDirectoryName := 'specs'.
+
+	tonelWriterClass := StoreToTonelWriter. 

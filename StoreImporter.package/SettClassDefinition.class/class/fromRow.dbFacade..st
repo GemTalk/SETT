@@ -23,6 +23,7 @@ fromRow: row dbFacade: dbFacade
 		ifNotNil:
 			[ :blobType | (SettStoreBlob ofType: blobType bytes: (row at: 6) dbFacade: dbFacade) decoded ].
 	instance
+		initializeNamespace;
 		classComment: comment;
 		timestamp: (TimestampConverter dateAndTimeForSeconds: (row at: 2)).
 	^ instance

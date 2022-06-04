@@ -10,9 +10,10 @@ writeAllPackagesTo: rowanDirectories loggingTo: aSettLogger withDestinationConfi
 			| copy tonelWriter |
 			"Copy the packageVersion so that its contents 
 			can get GCed once it has been written to disk."
+"packageVersion printString = '<PackageVersion ''Seaside/VW Support'' ''1.0''>' ifTrue: [ self halt ]."
 			copy := packageVersion copy.
 			copy fetchContentsWithLogger: aSettLogger.
-			tonelWriter := StoreToTonelWriter
+			tonelWriter := destinationConfiguration tonelWriterClass
 				writePackage: copy
 				to: rowanDirectories
 				withDestinationConfiguration: destinationConfiguration

@@ -1,3 +1,4 @@
-accessing
+initialization
 userMapping: aSettUserMap
-	userMapping := aSettUserMap 
+
+	userMapping := aSettUserMap

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SettDestinationConfiguration",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"namespaceMapping",
+		"includeNamespaceInPackageName"
+	],
+	"name" : "SettNamespaceMappingDestinationConfiguration",
+	"type" : "normal"
+}

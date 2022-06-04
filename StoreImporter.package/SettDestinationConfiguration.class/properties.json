@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "MartinMcClure 4/23/2018 17:47",
+	"commentStamp" : "RichardSargent 5/27/2022 11:49",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
@@ -9,15 +9,14 @@
 		"isNewRepository",
 		"branchName",
 		"repositoryPathString",
-		"rowanSubdirectory",
-		"rowanSourcesDirectory",
-		"rowanConfigsDirectory",
-		"rowanSpecsDirectory",
 		"rowanProjectName",
 		"repositoryBeginDate",
 		"userMapping",
-		"namespaceMapping",
-		"includeNamespaceInPackageName"
+		"tonelWriterClass",
+		"rowanConfigsDirectoryName",
+		"rowanSourcesDirectoryName",
+		"rowanSpecsDirectoryName",
+		"rowanSubdirectoryName"
 	],
 	"name" : "SettDestinationConfiguration",
 	"type" : "normal"
