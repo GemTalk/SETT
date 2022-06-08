@@ -1,5 +1,6 @@
 actions
 connect
-	dbType = 'oracle'
-		ifTrue: [ conn := SettOracleProxy newWithDbConnection: self ]
-		ifFalse: [ conn := P3Client new url: self url ]
+
+	conn := dbType = 'oracle'
+		        ifTrue: [ SettOracleProxy newWithDbConnection: self ]
+		        ifFalse: [ P3Client new url: self url ]

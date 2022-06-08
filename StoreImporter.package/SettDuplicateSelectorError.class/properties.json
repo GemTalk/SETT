@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "RichardSargent 6/6/2022 13:58",
+	"super" : "Error",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"methodDefinition",
+		"existingSelectors",
+		"packageVersion"
+	],
+	"name" : "SettDuplicateSelectorError",
+	"type" : "normal"
+}

@@ -10,5 +10,6 @@ readCodePublishedBetweenStartDateAndTime: aDateAndTime andEndDateAndTime: endDat
 		initializeForSourceConfiguration: aSourceConfiguration;
 		initializeForDestinationConfiguration: aDestinationConfiguration;
 		findAllStorePublishes;
-		writePublishesToGit.
+		writePublishesToGit;
+		closeLog.
 	^worker

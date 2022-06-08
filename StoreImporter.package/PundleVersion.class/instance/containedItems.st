@@ -1,3 +1,0 @@
-database
-containedItems
-	self subclassResponsibility

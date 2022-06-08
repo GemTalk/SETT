@@ -1,0 +1,3 @@
+logging
+closeLog
+	logger closeOutputStream

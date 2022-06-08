@@ -1,4 +1,4 @@
-conversion
+converting
 contentsOfBlob: blobBytes blobType: typeInteger
 	"Currently known types:
 	2: base64-encoded ByteString.

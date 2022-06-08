@@ -1,4 +1,4 @@
-initialization
+class initialization
 initialize
 	GsAttributes := Dictionary new.
 	

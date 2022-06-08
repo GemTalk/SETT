@@ -1,7 +1,8 @@
 private
 emptyTonelSubdirectory
-
-	"Must delete the entire contents of the Rowan subdirectory structure each time so we start writing to an empty directory."
+	"Must delete the entire contents of the Rowan subdirectory structure each time,
+	 so we start writing to an empty directory.
+	 It's easier to delete everthing and recreate the empty rowan directories."
 
 	| argArray |
 	argArray := {  '-rf'.
@@ -17,4 +18,4 @@ emptyTonelSubdirectory
 							, process exitStatusInterpreter printString , '  stderr: '
 							, errString ] ].
 	"Recreate all of the rowan structure"
-	rowanDirectories initialize
+	rowanDirectories createDirectoryStructure

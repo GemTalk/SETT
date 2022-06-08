@@ -1,1 +1,0 @@
-I handle git logging

@@ -11,8 +11,7 @@
 		"timestamp",
 		"properties",
 		"instanceMethods",
-		"classMethods",
-		"originalCategory"
+		"classMethods"
 	],
 	"name" : "SettClassDefinition",
 	"type" : "normal"

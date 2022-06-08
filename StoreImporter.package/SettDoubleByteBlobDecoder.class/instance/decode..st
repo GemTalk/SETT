@@ -1,4 +1,4 @@
-conversion
+converting
 decode: inputString
 	inputStream := ReadStream on: inputString.
 	outputStream := WriteStream on: WideString new.

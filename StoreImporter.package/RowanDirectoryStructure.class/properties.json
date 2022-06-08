@@ -10,8 +10,7 @@
 		"rowanSourcesDirectory",
 		"rowanConfigsDirectory",
 		"rowanSpecsDirectory",
-		"rowanSubdirectory",
-		"rowanBaseDirectory"
+		"rowanSubdirectory"
 	],
 	"name" : "RowanDirectoryStructure",
 	"type" : "normal"

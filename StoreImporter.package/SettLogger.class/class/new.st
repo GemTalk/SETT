@@ -1,3 +1,3 @@
 instance creation
 new
-	^ self basicNew logOutputStream
+	^ super new openOutputStream

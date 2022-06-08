@@ -2,9 +2,7 @@
 	"commentStamp" : "MartinMcClure 5/5/2018 13:32",
 	"super" : "Object",
 	"category" : "StoreImporter",
-	"classinstvars" : [
-		"logOutputStream"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

@@ -13,8 +13,7 @@
 		"dbName",
 		"conn",
 		"dbType",
-		"dbListener",
-		"prefixTablesWithDbName"
+		"dbListener"
 	],
 	"name" : "SettDatabaseConnection",
 	"type" : "normal"

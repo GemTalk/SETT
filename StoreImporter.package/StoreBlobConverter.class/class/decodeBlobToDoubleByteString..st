@@ -1,4 +1,4 @@
-conversion
+converting
 decodeBlobToDoubleByteString: blobBytes
 	| inputString |
 	inputString := self decodeBlobToByteString: blobBytes.

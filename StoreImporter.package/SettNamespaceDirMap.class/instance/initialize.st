@@ -1,4 +1,4 @@
-accessing
+initialization
 initialize
 
 	namespaceMap ifNil: [ 

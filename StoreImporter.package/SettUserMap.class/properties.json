@@ -6,9 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"userMap",
-		"gitUser",
-		"storeUser"
+		"userMap"
 	],
 	"name" : "SettUserMap",
 	"type" : "normal"

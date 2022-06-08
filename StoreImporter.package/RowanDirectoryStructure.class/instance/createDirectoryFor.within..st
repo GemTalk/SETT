@@ -1,4 +1,4 @@
-accessing
+initializing
 createDirectoryFor: aDirectoryName within: aBaseDirectory
 	| destinationDirectory |
 	destinationDirectory := ((Path from: aBaseDirectory)

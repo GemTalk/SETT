@@ -1,4 +1,5 @@
 private
 createRowanDirectoryStructure
-	rowanDirectories := RowanDirectoryStructure
-		createDirectoriesFrom: destinationConfiguration
+
+	rowanDirectories := RowanDirectoryStructure createDirectoriesFrom:
+		                    destinationConfiguration

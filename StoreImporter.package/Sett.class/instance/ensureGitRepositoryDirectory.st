@@ -8,5 +8,5 @@ ensureGitRepositoryDirectory
 	[ fileReference createDirectory ]
 		on: DirectoryExists
 		do: [ destinationConfiguration isNewRepository
-				ifTrue: [ fileReference entries size = 0
-						ifFalse: [ self error: 'Destination directory exists and is not empty.' ] ] ]
+				ifTrue: [ fileReference hasChildren
+						ifTrue: [ self error: 'Destination directory exists and is not empty.' ] ] ]

@@ -1,6 +1,5 @@
-as yet unclassified
+instance creation
 createDirectoriesFrom: aDestinationConfiguration
-	^ self basicNew
-		destinationConfiguration: aDestinationConfiguration;
-		initialize;
+	^ self new
+		initializeFromDestinationConfiguration: aDestinationConfiguration;
 		yourself
