@@ -1,3 +1,3 @@
 accessing
 namespaceMap
-	^ namespaceMap ifNil: [ ^ Dictionary new ]
+	^ namespaceMap ifNil: [ namespaceMap := Dictionary new ]

@@ -1,3 +1,4 @@
 accessing
 getPrefixFor: aSettNamespace
-	^ (namespaceMap at: aSettNamespace) key
+
+	^ (self namespaceMap at: aSettNamespace) key

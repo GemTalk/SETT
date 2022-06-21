@@ -1,1 +1,0 @@
-I handle the conversion of Store blob data to appropriate formats.

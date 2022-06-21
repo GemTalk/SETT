@@ -2,8 +2,8 @@ private
 writePublishesToGit
 
 	self createRowanDirectoryStructure.
-	storePublishes do: [ :each | 
-		each logCommitStartTo: logger.
+	storePublishes doWithIndex: [ :each :index | 
+		each logCommitStartTo: logger number: index.
 		[ 
 		SettCommitWriter
 			writeCommit: each

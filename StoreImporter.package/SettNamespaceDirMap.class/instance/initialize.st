@@ -1,9 +1,8 @@
 initialization
 initialize
+	"By default, we always map the Root namespace to no prefix."
 
-	namespaceMap ifNil: [ 
-		namespaceMap := Dictionary new.
-		self
-			addMappingForNamespaceString: 'Root'
-			prefix: ''
-			attributes: #(  ) ]
+	self
+		addMappingForNamespaceString: 'Root'
+		prefix: ''
+		attributes: #(  )

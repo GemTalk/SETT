@@ -1,3 +1,7 @@
 accessing
 getNamespaceFor: namespace
-	^ namespaceMap at: namespace ifPresent: [ ^ namespace ] ifAbsent: [ ^ nil ]
+
+	^ self namespaceMap
+		  at: namespace
+		  ifPresent: [ namespace ]
+		  ifAbsent: [ nil ]

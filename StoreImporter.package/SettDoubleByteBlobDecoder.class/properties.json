@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "MartinMcClure 5/7/2018 16:15",
+	"commentStamp" : "RichardSargent 6/17/2022 11:30",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
@@ -9,7 +9,8 @@
 		"inputStream",
 		"outputStream",
 		"codePointOut",
-		"multiplier"
+		"byteCount",
+		"maxBytesPerCharacter"
 	],
 	"name" : "SettDoubleByteBlobDecoder",
 	"type" : "normal"

@@ -1,3 +1,4 @@
 accessing
 fetchMappings
-	^ namespaceMap keys
+
+	^ self namespaceMap keys

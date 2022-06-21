@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "RichardSargent 6/21/2022 11:42",
+	"super" : "TestCase",
+	"category" : "StoreImporter-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SettDoubleByteBlobDecoderTest",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+A SettDoubleByteBlobDecoderTest is a test class for testing the behavior of SettDoubleByteBlobDecoder.
+There is definitely room for more elaborate tests.
+For example, is there a byte sequence that might look like atwo-byte wide string until sometime after it has processed one or more characters? There is only one example of a four-byte wide string in the GemTalk Store repository, so it is difficult to generalize the tests.

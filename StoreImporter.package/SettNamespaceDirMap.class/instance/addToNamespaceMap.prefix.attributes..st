@@ -1,6 +1,6 @@
 accessing
 addToNamespaceMap: aSettNamespace prefix: aPrefixString attributes: rwAttributeArray
 
-	namespaceMap
+	self namespaceMap
 		at: aSettNamespace
 		put: aPrefixString -> rwAttributeArray
