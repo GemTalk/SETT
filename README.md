@@ -6,8 +6,8 @@ SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code fr
 
 ## Pre-requisites
 
-1. Smalltalk: SETT has been tested on Pharo 6.1
-2. Linux:  SETT has been tested on RedHat 6.x and Ubuntu 16.04.  It should work on other Linux distributions as well
+1. Smalltalk: SETT 2.0 has been tested on Pharo 10.
+2. Linux:  SETT has been tested on Ubuntu 18.04.  It should work on other Linux distributions as well
 3. Git: You need to have git installed on the machine that you're running SETT from.
 4. Disk space: Ensure that you have sufficient disk space to hold the entire contents of your repository.
 5. Store access: You must provide credentials for a Store user that has access to the repository to be imported.  Ideally, this user will be a read-only user.
@@ -24,6 +24,17 @@ Metacello new
 ## Installation for use on Oracle backed Store DB
 
 Work in progress
+
+
+# Caveats
+
+Override methods are not currently handled. SETT tries to extract all methods from Store. When it finds a duplicate selector, it rewrites the method prefixing the selector with DUPLICATE_, a collision avoiding number, and another underscore. e.g. DUPLICATE_1_selector
+
+SETT also only extracts and converts shared variables defined for classes. Shared variables associated with other namespaces are NOT extracted.
+
+The length of time to extract from the Store repository can be long. It depends on how many package versions are selected from the specified time range and the size of the code in them. Extracting the entire GBS Store repository extracted 5300 package versions and took half a day to run.
+
+If there is more than one top-level bundle in the Store repository, the versions are all sorted chronologically and written out in order. The indivdual projects in the Store repository are not very accessible, since one commit can be for one project and the next commit for a different one. The git log allows one to find the version one wishes, but not so much to explore what was extracted when the list of projects is not already known.
 
 
 # Performing the import 
@@ -70,6 +81,8 @@ _SettExampleDestinationConfiguration_ as an example:
 5. Write code and execute to perform the export from Store to git. **Before beginning, you should save your image**. To perform the migration, you will define and execute a do-it in a Pharo workspace.  By default, this automatically creates a new Git repository. The export includes a starting DateAndTime, which you may set to a recent date for small tests, or use a very early time for a complete load operation. This date is used for the initial git commit in a new repository.  A very simple example of a running SETT is below.  
 
 6. Additional SETT configuration options are available and documented in the [wiki](https://github.com/GemTalk/SETT/wiki).
+
+7. As SETT runs, it writes a log file into the directory from which the image was run. The log file shows you what was found for extract and each package version it writes out, as well as warning messages. The file name is sett_<timestamp>.log.
 
 
 ## Simple example
