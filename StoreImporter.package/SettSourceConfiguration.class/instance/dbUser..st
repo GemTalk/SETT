@@ -1,3 +1,3 @@
 accessing
-dbUser: anObject
-	dbUser := anObject
+dbUser: aString
+	dbUser := aString

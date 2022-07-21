@@ -1,11 +1,12 @@
 instance creation
 writePackage: aPackageVersion to: rowanDirectories withDestinationConfiguration: aDestinationConfiguration withLogger: aSettLogger
+
 	| tonelWriter |
-	tonelWriter := self new.
-	tonelWriter
-		rowanDirectories: rowanDirectories;
-		destinationConfiguration: aDestinationConfiguration;
-		package: aPackageVersion;
-		logger: aSettLogger;
-		writePackageToDisk.
+	tonelWriter := self new
+		               rowanDirectories: rowanDirectories;
+		               destinationConfiguration: aDestinationConfiguration;
+		               packageVersion: aPackageVersion;
+		               logger: aSettLogger;
+		               yourself.
+	tonelWriter writePackageToDisk.
 	^ tonelWriter

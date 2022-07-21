@@ -8,7 +8,9 @@
 	"instvars" : [
 		"dbFacade",
 		"classDefinitions",
-		"classExtensions"
+		"classExtensions",
+		"allClassNames",
+		"problematicSharedVariables"
 	],
 	"name" : "PackageVersion",
 	"type" : "normal"

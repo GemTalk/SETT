@@ -1,4 +1,4 @@
-logging
+initializing
 openOutputStream
 
 	| working filename timestamp |

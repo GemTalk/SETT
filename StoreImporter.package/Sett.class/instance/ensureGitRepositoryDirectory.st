@@ -3,7 +3,8 @@ ensureGitRepositoryDirectory
 	"If the directory for the Git repository doesn't exist, create it."
 
 	| repositoryPath fileReference |
-	repositoryPath := Path from: destinationConfiguration repositoryPathString.
+"NEW	repositoryPath := Path from: self rowanDirectories baseRepositoryPathString.
+ OLD"		repositoryPath := Path from: destinationConfiguration repositoryPathString.
 	fileReference := repositoryPath asFileReference.
 	[ fileReference createDirectory ]
 		on: DirectoryExists

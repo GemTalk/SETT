@@ -11,13 +11,13 @@ fromRow: row dbFacade: dbFacade
 	className := (SettClassDefinitionParser
 		parse: (row at: 3)
 		startingAt: #fullyQualifiedClassName)
-		addLast: (row at: 1);
-		yourself.
+			addLast: (row at: 1);
+			yourself.
 	instance className: className.
 	superclassName := SettClassDefinitionParser
 		parse: (row at: 4)
 		startingAt: #fullyQualifiedClassName.
-	instance propertyAt: 'superclass' put: superclassName.
+	instance superclassName: superclassName.
 	comment := (row at: 5)
 		ifNil: [ '' ]
 		ifNotNil:

@@ -1,3 +1,4 @@
 accessing
 indexedType
-	^ properties at: 'indexedType' ifAbsent: [ #none ]
+
+	^ self propertyAt: 'indexedType' ifAbsent: [ #none ]

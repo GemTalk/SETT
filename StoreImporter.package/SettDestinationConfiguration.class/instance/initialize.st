@@ -5,6 +5,7 @@ initialize
 	repositoryPathString := './myGitRepository'.
 	rowanProjectName := 'StoreExport'.
 	isNewRepository := true.
+	separateGitRepos := false.
 	branchName := 'fromStore'.
 
 	"The following configuration parameters should not be changed"
@@ -13,4 +14,5 @@ initialize
 	rowanConfigsDirectoryName := 'configs'.
 	rowanSpecsDirectoryName := 'specs'.
 
-	tonelWriterClass := StoreToTonelWriter. 
+	tonelWriterClass := StoreToTonelWriter.
+	debugLogging := false.

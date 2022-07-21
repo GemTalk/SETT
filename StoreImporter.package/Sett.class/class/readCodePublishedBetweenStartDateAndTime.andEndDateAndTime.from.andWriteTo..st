@@ -3,13 +3,14 @@ readCodePublishedBetweenStartDateAndTime: aDateAndTime andEndDateAndTime: endDat
 
 
 	| worker |
-	worker := self new.
-	worker
+	worker := self new
 		withInitialDateAndTime: aDateAndTime;
-		withEndDateAndTime: endDateAndTime ;
+		withEndDateAndTime: endDateAndTime;
 		initializeForSourceConfiguration: aSourceConfiguration;
 		initializeForDestinationConfiguration: aDestinationConfiguration;
+		yourself.
+	[worker
 		findAllStorePublishes;
-		writePublishesToGit;
-		closeLog.
+		writePublishesToGit]
+			ensure: [ worker closeLog ].
 	^worker

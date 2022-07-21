@@ -1,0 +1,4 @@
+configuring
+beLogging
+
+	logLevel := #logging

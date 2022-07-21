@@ -10,20 +10,20 @@ decorateDefinitionsWithDuplicatedSimpleNames
 	| classDefsByName classDefsBySuperclassName |
 	classDefsByName := Dictionary new.
 	classDefsBySuperclassName := Dictionary new.
-	package classDefinitions do: [ :each |
+	packageVersion classDefinitions do: [ :each |
 		(classDefsByName at: each classSimpleName ifAbsentPut: [ Set new ]) add: each classFullName ].
-	package classDefinitions do: [ :each |
+	packageVersion classDefinitions do: [ :each |
 		(classDefsByName at: each superclassSimpleName ifAbsentPut: [ Set new ]) add: each superclassFullName.
 		(classDefsBySuperclassName at: each superclassSimpleName ifAbsentPut: [ Set new ]) add: each superclassFullName ].
-	package classExtensions do: [ :each |
+	packageVersion classExtensions do: [ :each |
 		(classDefsByName at: each classSimpleName ifAbsentPut: [ Set new ]) add: each classFullName ].
 
-	package classDefinitions do: [ :each |
+	packageVersion classDefinitions do: [ :each |
 		(classDefsByName at: each classSimpleName) size > 1
 			ifTrue: [ each propertyAt: 'sett_transient_className' put: each classFullName definitionString] ].
-	package classDefinitions do: [ :each |
+	packageVersion classDefinitions do: [ :each |
 		(classDefsByName at: each superclassSimpleName) size > 1
 			ifTrue: [ each propertyAt: 'sett_transient_superclassName' put: each superclassFullName definitionString] ].
-	package classExtensions do: [ :each |
+	packageVersion classExtensions do: [ :each |
 		(classDefsByName at: each classSimpleName) size > 1
 			ifTrue: [ each propertyAt: 'sett_transient_className' put: each classFullName definitionString] ].

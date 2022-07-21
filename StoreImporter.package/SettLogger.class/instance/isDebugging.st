@@ -1,0 +1,4 @@
+configuring
+isDebugging
+
+	^ logLevel = #debugging

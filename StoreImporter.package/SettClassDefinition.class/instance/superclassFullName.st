@@ -1,3 +1,6 @@
 accessing
 superclassFullName
-	^ properties at: 'superclass' ifAbsent: [ self error: 'Required property missing: superclass' ]
+
+	^ self
+		  propertyAt: 'superclass'
+		  ifAbsent: [ self error: 'Required property missing: superclass' ]

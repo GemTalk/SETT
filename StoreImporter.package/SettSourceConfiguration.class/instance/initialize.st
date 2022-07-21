@@ -7,3 +7,4 @@ initialize
 	dbName := ''.
 	dbUser := ''.
 	dbPassword := ''.
+	patterns := #('*').

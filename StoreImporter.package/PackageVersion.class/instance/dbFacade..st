@@ -1,3 +1,3 @@
-accessing
+initializing
 dbFacade: aDatabaseFacade
 	dbFacade := aDatabaseFacade

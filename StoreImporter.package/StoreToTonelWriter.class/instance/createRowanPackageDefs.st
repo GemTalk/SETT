@@ -5,10 +5,10 @@ createRowanPackageDefs
 	self decorateDefinitionsWithDuplicatedSimpleNames.
 	packageDefs := OrderedCollection new.
 	rwPackages := Set new.
-	rwPackageName := package pundleName.
+	rwPackageName := packageVersion pundleName.
 	rwPackages add: rwPackageName.
 	rwPackageDef := RwPackageDefinition newNamed: rwPackageName.
 	self
-		addClasses: package classDefinitions to: rwPackageDef;
-		addClassExtensions: package classExtensions to: rwPackageDef.
+		addClasses: packageVersion classDefinitions to: rwPackageDef;
+		addClassExtensions: packageVersion classExtensions to: rwPackageDef.
 	packageDefs add: rwPackageDef

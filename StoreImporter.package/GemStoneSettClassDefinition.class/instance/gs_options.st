@@ -7,7 +7,7 @@ gs_options
 	properties
 		keysDo: [ :property | 
 			| value |
-			value := properties at: property.
+			value := self propertyAt: property.
 			value = 'true'
 				ifTrue: [ | gsOption |
 					gsOption := SettGsClassOptions getOptionMappingFor: property.

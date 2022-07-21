@@ -1,0 +1,5 @@
+initializing
+initializeFromDestinationConfiguration: aDestinationConfiguration parentDirectoryName: aString
+
+	parentDirectoryName := aString.
+	self initializeFromDestinationConfiguration: aDestinationConfiguration.

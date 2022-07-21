@@ -1,3 +1,3 @@
 accessing
-dbPassword: anObject
-	dbPassword := anObject
+dbPassword: aString
+	dbPassword := aString

@@ -1,5 +1,6 @@
 private
 doGitCommit
+
 	gitRepository
 		gitAddAll;
 		gitCommitWithDate: storeCommit timestamp

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "MartinMcClure 4/23/2018 17:44",
+	"commentStamp" : "RichardSargent 7/7/2022 14:07",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
@@ -12,7 +12,8 @@
 		"dbUser",
 		"dbPassword",
 		"dbType",
-		"dbListener"
+		"dbListener",
+		"patterns"
 	],
 	"name" : "SettSourceConfiguration",
 	"type" : "normal"

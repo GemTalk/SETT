@@ -2,7 +2,7 @@ initializing
 createDirectoryStructure
 
 	| baseFsDir baseRowanDir |
-	baseFsDir := destinationConfiguration repositoryPathString.
+	baseFsDir := self baseRepositoryPathString.
 	baseRowanDir := baseFsDir , '/'
 	                , destinationConfiguration rowanSubdirectoryName.
 

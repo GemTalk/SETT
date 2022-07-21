@@ -1,3 +1,3 @@
 accessing
-dbListener: anObject
-	dbListener := anObject
+dbListener: aString
+	dbListener := aString

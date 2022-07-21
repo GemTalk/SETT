@@ -1,8 +1,11 @@
 private-conversion
-rowanClassExtensionFor: classDefinition
+rowanClassExtensionFor: aClassDefinition
 
-	| className |
-	className := classDefinition
+	| className definition |
+	className := aClassDefinition
 		             propertyAt: 'sett_transient_className'
-		             ifAbsent: [ classDefinition classSimpleName ].
-	^ RwClassExtensionDefinition newForClassNamed: className
+		             ifAbsent: [ aClassDefinition classSimpleName ].
+	definition := RwClassExtensionDefinition newForClassNamed: className.
+	aClassDefinition classVars ifNotEmpty: [ :them | 
+		definition classVarNames: them asArray ].
+	^ definition

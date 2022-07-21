@@ -1,4 +1,4 @@
-logging
+terminating
 closeOutputStream
 
 	logOutputSream close

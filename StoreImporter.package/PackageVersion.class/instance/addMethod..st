@@ -1,4 +1,4 @@
-accessing
+updating
 addMethod: aMethodDefinition
 
 	| classDefinition |

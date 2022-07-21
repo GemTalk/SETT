@@ -1,0 +1,4 @@
+configuring
+beDebugging
+
+	logLevel := #debugging

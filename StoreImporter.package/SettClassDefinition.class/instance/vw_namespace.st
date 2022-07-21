@@ -1,4 +1,4 @@
 printing
 vw_namespace
 
-	^ properties at: 'vw_namespace'
+	^ self propertyAt: 'vw_namespace'

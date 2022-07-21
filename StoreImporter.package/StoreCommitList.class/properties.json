@@ -9,7 +9,8 @@
 		"commits",
 		"store",
 		"storeRepository",
-		"endDateAndTime"
+		"endDateAndTime",
+		"matchingPatterns"
 	],
 	"name" : "StoreCommitList",
 	"type" : "normal"

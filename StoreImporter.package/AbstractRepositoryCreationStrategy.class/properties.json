@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"destinationConfiguration",
+		"storeCommitList",
+		"logger"
+	],
+	"name" : "AbstractRepositoryCreationStrategy",
+	"type" : "normal"
+}

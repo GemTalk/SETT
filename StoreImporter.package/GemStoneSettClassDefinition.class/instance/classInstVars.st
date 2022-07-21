@@ -1,5 +1,4 @@
 accessing
 classInstVars
-	^ properties
-		at: 'classInstVars'
-		ifAbsent: [ #()]
+
+	^ self propertyAt: 'classInstVars' ifAbsent: [ #(  ) ]

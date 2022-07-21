@@ -1,5 +1,4 @@
 accessing
 gs_constraints
-	^ properties
-		at: 'gs_constraints'
-		ifAbsent: [ #() ]
+
+	^ self propertyAt: 'gs_constraints' ifAbsent: [ #(  ) ]

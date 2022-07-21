@@ -1,0 +1,4 @@
+accessing
+baseRepositoryPathString
+
+	^ destinationConfiguration repositoryPathString

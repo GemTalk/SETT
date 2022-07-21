@@ -1,3 +1,3 @@
 accessing
-dbHost: anObject
-	dbHost := anObject
+dbHost: aString
+	dbHost := aString

@@ -1,3 +1,3 @@
 initialization
-isNewRepository: anObject
-	isNewRepository := anObject
+isNewRepository: aBoolean
+	isNewRepository := aBoolean

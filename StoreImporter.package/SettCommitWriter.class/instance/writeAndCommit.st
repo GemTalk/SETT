@@ -3,4 +3,4 @@ writeAndCommit
 	self
 		emptyTonelSubdirectory;
 		writeAllPackages;
-		doGitCommit
+		commitAndTag

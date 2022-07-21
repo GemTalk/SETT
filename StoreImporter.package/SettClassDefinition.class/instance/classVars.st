@@ -1,3 +1,3 @@
 accessing
 classVars
-	^ properties at: 'classVariableNames' ifAbsent: [ #() ]
+	^ self propertyAt: 'classVariableNames' ifAbsent: [ #() ]

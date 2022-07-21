@@ -1,0 +1,4 @@
+testing
+hasUnfinishedBusiness
+
+	^problematicSharedVariables notEmpty

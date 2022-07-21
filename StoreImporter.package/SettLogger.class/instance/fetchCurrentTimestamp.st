@@ -1,4 +1,4 @@
-logging
+initializing
 fetchCurrentTimestamp
 
 	| currentDateAndTime timestampStream |

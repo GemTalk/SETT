@@ -1,6 +1,6 @@
 initialization
 initializeFrom: row dbFacade: dbFacade
-	"See DatabaseFacade >> fetchSharedVariables for row ordering."
+	"See DatabaseFacade >> sharedVariablesInPackageWithId: for row ordering."
 
 	"SELECT 
 	var.name,

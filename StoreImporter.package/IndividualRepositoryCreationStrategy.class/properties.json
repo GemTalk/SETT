@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractRepositoryCreationStrategy",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rowanDirectoriesMap",
+		"gitRepositoriesMap",
+		"currentPundleName"
+	],
+	"name" : "IndividualRepositoryCreationStrategy",
+	"type" : "normal"
+}

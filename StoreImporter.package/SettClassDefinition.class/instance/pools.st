@@ -1,3 +1,4 @@
 accessing
 pools
-	^ properties at: 'poolDictionaries' ifAbsent: [ #() ]
+
+	^ self propertyAt: 'poolDictionaries' ifAbsent: [ #(  ) ]

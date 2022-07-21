@@ -1,3 +1,3 @@
 accessing
-dbPort: anObject
-	dbPort := anObject
+dbPort: anInteger
+	dbPort := anInteger

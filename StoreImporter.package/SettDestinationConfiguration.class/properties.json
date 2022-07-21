@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "RichardSargent 5/27/2022 11:49",
+	"commentStamp" : "RichardSargent 6/22/2022 10:29",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
@@ -16,7 +16,9 @@
 		"rowanConfigsDirectoryName",
 		"rowanSourcesDirectoryName",
 		"rowanSpecsDirectoryName",
-		"rowanSubdirectoryName"
+		"rowanSubdirectoryName",
+		"separateGitRepos",
+		"debugLogging"
 	],
 	"name" : "SettDestinationConfiguration",
 	"type" : "normal"

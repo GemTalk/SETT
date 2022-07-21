@@ -1,3 +1,4 @@
 accessing
 instVarNames
-	^ properties at: 'instanceVariableNames' ifAbsent: [ #() ]
+
+	^ self propertyAt: 'instanceVariableNames' ifAbsent: [ #(  ) ]

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractRepositoryCreationStrategy",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rowanDirectories",
+		"gitRepository"
+	],
+	"name" : "AllInOneRepositoryCreationStrategy",
+	"type" : "normal"
+}
