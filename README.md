@@ -36,6 +36,8 @@ The length of time to extract from the Store repository can be long. It depends 
 
 If there is more than one top-level bundle in the Store repository, the versions are all sorted chronologically and written out in order. The indivdual projects in the Store repository are not very accessible, since one commit can be for one project and the next commit for a different one. The git log allows one to find the version one wishes, but not so much to explore what was extracted when the list of projects is not already known.
 
+Store repositories often hold multiple projects, so extracting all of them can be messy and time consuming. Messy, since the git history interleaves the commits from different projects according to when each was checked in to Store. You can specify patterns in the source configuration to restrict the top-level pundles to those that correspond to a single project. e.g. #('GBS*') matches everything for GBS. The default pattern set is #("*'), matching everything.
+
 
 # Performing the import 
 
