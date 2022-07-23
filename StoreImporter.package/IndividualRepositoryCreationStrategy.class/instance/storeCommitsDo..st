@@ -6,5 +6,5 @@ storeCommitsDo: aOneOrTwoArgBlock
 
 	super storeCommitsDo:
 		[ :each :index | 
-		self currentPundleName: each pundleName.
+		self currentPundleName: each pundleVersion pundleName.
 		aOneOrTwoArgBlock cull: each cull: index ]

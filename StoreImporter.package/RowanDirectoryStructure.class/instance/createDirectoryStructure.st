@@ -1,4 +1,4 @@
-initializing
+directory creation
 createDirectoryStructure
 
 	| baseFsDir baseRowanDir |

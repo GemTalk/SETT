@@ -1,11 +1,12 @@
 directory creation
 emptyTonelSubdirectory
-	"Get rid of the files, so there are no spurious artefacts from
-	 a previous commit."
+	"Must delete the entire contents of the Rowan subdirectory structure each time,
+	 so we start writing to an empty directory.
+	 It's easier to delete everthing and recreate the empty rowan directories."
 
 	OSSUnixSubprocess new
 		command: '/bin/rm';
-		arguments: self rowanDirectories rowanSubdirectory fullName , '/*/*';
+		arguments: { '-rf'.  self rowanDirectories rowanSubdirectory fullName };
 		redirectStdout;
 		redirectStderr;
 		runAndWaitOnExitDo: [ :process :outString :errString | 
@@ -13,3 +14,5 @@ emptyTonelSubdirectory
 					self error: 'Deleting previous sources failed. Exit status: '
 							, process exitStatusInterpreter printString , '  stderr: '
 							, errString ] ].
+	"Recreate all of the rowan structure"
+	self rowanDirectories createDirectoryStructure

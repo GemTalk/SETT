@@ -2,4 +2,3 @@ initializing
 initializeFromDestinationConfiguration: aDestinationConfiguration
 
 	destinationConfiguration := aDestinationConfiguration.
-	self createDirectoryStructure

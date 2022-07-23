@@ -1,6 +1,7 @@
 private
 writeAllPackages
+
 	storeCommit
-		writeAllPackagesTo: rowanDirectories
+		writeAllPackagesTo: self rowanDirectories
 		loggingTo: logger
-		withDestinationConfiguration: destinationConfiguration
+		withDestinationConfiguration: self destinationConfiguration

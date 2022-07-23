@@ -14,7 +14,8 @@
 		"logger",
 		"rowanDirectories",
 		"initialDateAndTime",
-		"endDateAndTime"
+		"endDateAndTime",
+		"repositoryCreationStrategy"
 	],
 	"name" : "Sett",
 	"type" : "normal"

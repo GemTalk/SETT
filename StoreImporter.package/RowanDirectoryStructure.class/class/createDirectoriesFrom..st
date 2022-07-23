@@ -1,5 +1,5 @@
 instance creation
 createDirectoriesFrom: aDestinationConfiguration
-	^ self new
-		initializeFromDestinationConfiguration: aDestinationConfiguration;
-		yourself
+
+	^ (self destinationConfiguration: aDestinationConfiguration)
+		  createDirectories

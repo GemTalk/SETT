@@ -1,3 +1,3 @@
 accessing
 destinationConfiguration
-	^ destinationConfiguration
+	^ self repositoryCreationStrategy destinationConfiguration

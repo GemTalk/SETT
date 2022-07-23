@@ -1,7 +1,7 @@
-instance creation
+directory creation
 createDirectoriesFrom: aDestinationConfiguration parentDirectoryName: aString
 
-	^ self new
-		initializeFromDestinationConfiguration: aDestinationConfiguration
-			parentDirectoryName: aString;
-		yourself
+	^ (self
+		   destinationConfiguration: aDestinationConfiguration
+		   parentDirectoryName: aString)
+				createDirectories

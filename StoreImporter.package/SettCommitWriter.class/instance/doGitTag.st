@@ -7,14 +7,14 @@ doGitTag
 
 	| tag |
 	tag := self sanitizeTagString: storeCommit version.
-	[ gitRepository gitTagHeadWith: tag comment: storeCommit commentStringForGit ]
+	[ self gitRepository gitTagHeadWith: tag comment: storeCommit commentStringForGit ]
 		on: Error
 		do: [ :ex | 
 			| newTag |
 			logger log:
 				ex messageText , '   Retrying with pundle name appended.'.
 			newTag := tag , '-' , (self sanitizeTagString: storeCommit pundleVersion pundleName).
-			[ gitRepository gitTagHeadWith: newTag comment: storeCommit commentStringForGit ]
+			[ self gitRepository gitTagHeadWith: newTag comment: storeCommit commentStringForGit ]
 				on: Error
 				do: [ :ex2 | 
 					logger log: ex2 messageText , '   Retry with ' , newTag

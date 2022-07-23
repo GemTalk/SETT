@@ -1,0 +1,5 @@
+directory creation
+createDirectories
+
+	self ensureRootDirectoryExists.
+	self createDirectoryStructure

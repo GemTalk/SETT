@@ -4,3 +4,4 @@ initializeDestinationConfiguration: aSettDestinationConfiguration commitList: aS
 	destinationConfiguration := aSettDestinationConfiguration.
 	storeCommitList := aStoreCommitList.
 	logger := aLogger.
+	self createOrVerifyDirectoriesExist.

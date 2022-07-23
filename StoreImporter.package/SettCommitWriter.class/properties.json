@@ -6,12 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"gitRepository",
+		"repositoryCreationStrategy",
 		"storeCommit",
 		"databaseFacade",
-		"logger",
-		"rowanDirectories",
-		"destinationConfiguration"
+		"logger"
 	],
 	"name" : "SettCommitWriter",
 	"type" : "normal"

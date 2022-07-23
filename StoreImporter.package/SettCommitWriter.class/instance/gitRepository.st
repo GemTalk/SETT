@@ -1,3 +1,3 @@
 accessing
 gitRepository
-	^ gitRepository
+	^ self repositoryCreationStrategy gitRepository

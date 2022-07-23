@@ -2,7 +2,6 @@ directory creation
 initializeGitRepository
 
 	self storeCommitsDo: [ :eachCommit | 
-		self ensureGitRepositoryDirectory.
 		gitRepositoriesMap
 			at: currentPundleName
 			ifAbsentPut: [ 
