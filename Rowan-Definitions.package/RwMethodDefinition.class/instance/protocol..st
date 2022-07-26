@@ -1,4 +1,4 @@
 accessing
 protocol: aString
 
-	properties at: 'protocol' put: aString
+	self propertyAt: 'protocol' put: aString

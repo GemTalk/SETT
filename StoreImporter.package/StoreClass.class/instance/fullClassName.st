@@ -1,3 +1,0 @@
-accessing
-fullClassName
-	^  environmentString , '.' ,className

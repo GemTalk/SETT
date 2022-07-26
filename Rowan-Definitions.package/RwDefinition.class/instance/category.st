@@ -1,3 +1,3 @@
 private
 category
-	^ properties at: #category
+	^ self propertyAt: #category

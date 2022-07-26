@@ -1,3 +1,3 @@
 accessing
 isMeta: aBoolean
-	properties at: 'isMeta' put: aBoolean
+	self propertyAt: 'isMeta' put: aBoolean

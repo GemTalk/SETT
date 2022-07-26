@@ -1,4 +1,4 @@
 accessing
 protocol
 
-	^properties at: 'protocol'
+	^ self propertyAt: 'protocol'

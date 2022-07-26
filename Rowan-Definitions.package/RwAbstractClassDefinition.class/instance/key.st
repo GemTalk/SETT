@@ -1,4 +1,4 @@
 private
 key
 
-	^properties at: 'name' ifAbsent: [nil]
+	^ self propertyAt: 'name' ifAbsent: [nil]

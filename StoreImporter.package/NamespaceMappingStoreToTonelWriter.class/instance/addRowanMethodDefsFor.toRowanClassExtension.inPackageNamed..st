@@ -1,11 +1,14 @@
 private-conversion
 addRowanMethodDefsFor: methodDefinition toRowanClassExtension: rowanClassExtension inPackageNamed: packageName
+
+	| extensionProtocol |
+	extensionProtocol := '*' , packageName.
 	methodDefinition classMethods
 		do: [ :storeMethod | 
 			| rowanMethodDef |
 			rowanMethodDef := RwMethodDefinition
 				newForSelector: storeMethod selector
-				protocol: '*' , packageName 
+				protocol: extensionProtocol
 				source: storeMethod sourceCode.
 			rowanMethodDef propertyAt: 'originalCategory' put: storeMethod protocol.
 			rowanClassExtension addClassMethodDefinition: rowanMethodDef ].
@@ -14,7 +17,7 @@ addRowanMethodDefsFor: methodDefinition toRowanClassExtension: rowanClassExtensi
 			| rowanMethodDef |
 			rowanMethodDef := RwMethodDefinition
 				newForSelector: storeMethod selector
-				protocol: '*' , packageName 
+				protocol: extensionProtocol
 				source: storeMethod sourceCode.
 			rowanMethodDef propertyAt: 'originalCategory' put: storeMethod protocol.
 			rowanClassExtension addInstanceMethodDefinition: rowanMethodDef ]

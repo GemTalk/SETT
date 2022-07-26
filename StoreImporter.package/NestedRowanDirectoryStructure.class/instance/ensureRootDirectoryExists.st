@@ -1,4 +1,4 @@
-initializing
+directory creation
 ensureRootDirectoryExists
 	"If parent of the directory for the Git repository doesn't exist, create it."
 

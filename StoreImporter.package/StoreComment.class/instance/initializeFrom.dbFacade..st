@@ -1,5 +1,5 @@
 accessing
-initializeFrom: row dbFacade: dbFacade
+initializeFrom: row dbFacade: aDatabaseFacade
 	| commentId commentString |
 	self
 		timestamp: (TimestampConverter dateAndTimeForSeconds: (row at: 3));
@@ -7,5 +7,5 @@ initializeFrom: row dbFacade: dbFacade
 	commentId := row at: 5.
 	commentString := commentId = 0
 		ifTrue: [ 'No blessing comment entered in Store.' ]
-		ifFalse: [ (SettStoreBlob ofType: (row at: 1) bytes: (row at: 2) dbFacade: dbFacade) decoded ].
+		ifFalse: [ (SettStoreBlob ofType: (row at: 1) bytes: (row at: 2) dbFacade: aDatabaseFacade) decoded ].
 	self comment: commentString

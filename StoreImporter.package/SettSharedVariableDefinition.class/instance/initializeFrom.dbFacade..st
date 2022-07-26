@@ -1,5 +1,5 @@
 initialization
-initializeFrom: row dbFacade: dbFacade
+initializeFrom: row dbFacade: aDatabaseFacade
 	"See DatabaseFacade >> sharedVariablesInPackageWithId: for row ordering."
 
 	"SELECT 

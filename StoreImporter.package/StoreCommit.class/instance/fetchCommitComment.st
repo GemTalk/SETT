@@ -9,6 +9,6 @@ fetchCommitComment
 		blessing.blessinglevel,
 		blessing.commentid"
 
-	comment := (databaseFacade commentsForCommit: self)
+	comment := (dbFacade commentsForCommit: self)
 		           asOrderedCollection
-						collect: [ :row | StoreComment fromRow: row dbFacade: databaseFacade ]
+						collect: [ :row | StoreComment fromRow: row dbFacade: dbFacade ]

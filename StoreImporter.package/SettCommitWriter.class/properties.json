@@ -8,7 +8,6 @@
 	"instvars" : [
 		"repositoryCreationStrategy",
 		"storeCommit",
-		"databaseFacade",
 		"logger"
 	],
 	"name" : "SettCommitWriter",

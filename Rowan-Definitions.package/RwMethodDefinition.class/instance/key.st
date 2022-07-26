@@ -1,4 +1,4 @@
 private
 key
 
-	^properties at: 'selector' ifAbsent: [nil]
+	^ self propertyAt: 'selector' ifAbsent: [nil]

@@ -1,3 +1,3 @@
 *StoreImporter
 classVarNames
-  ^ properties at: 'classvars' ifAbsent: [ #() ]
+  ^ self propertyAt: 'classvars' ifAbsent: [ #() ]

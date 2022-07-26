@@ -1,4 +1,4 @@
 accessing
 category
-	^ properties at: 'protocol'
+	^ self propertyAt: 'protocol'
 	

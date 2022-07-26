@@ -1,3 +1,3 @@
 accessing
 isMeta
-	properties at: 'isMeta' 
+	^ self propertyAt: 'isMeta' 

@@ -1,5 +1,5 @@
 instance creation
-fromRow: row dbFacade: dbFacade
+fromRow: row dbFacade: aDatabaseFacade
 	^ self new
-		initializeFrom: row dbFacade: dbFacade;
+		initializeFrom: row dbFacade: aDatabaseFacade;
 		yourself

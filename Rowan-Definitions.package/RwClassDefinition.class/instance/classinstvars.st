@@ -1,3 +1,3 @@
 accessing
 classinstvars
-  ^ properties at: 'classinstvars'
+  ^ self propertyAt: 'classinstvars'

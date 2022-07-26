@@ -1,4 +1,4 @@
 accessing
 selector
 
-	^properties at: 'selector'
+	^ self propertyAt: 'selector'

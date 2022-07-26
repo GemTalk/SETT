@@ -1,4 +1,4 @@
 accessing
 instVarNames: arrayOfInstanceVariableNames
 
-	^ properties at: 'instvars' put: arrayOfInstanceVariableNames
+	^ self propertyAt: 'instvars' put: arrayOfInstanceVariableNames

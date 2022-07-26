@@ -1,4 +1,4 @@
 properties
 specification
 
-	^ properties at: 'spec'
+	^ self propertyAt: 'spec'

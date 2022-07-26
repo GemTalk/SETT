@@ -1,1 +1,0 @@
-I use StoreClassDefinitionGrammar to take a class definition Blob from store and convert it to the proper entries.

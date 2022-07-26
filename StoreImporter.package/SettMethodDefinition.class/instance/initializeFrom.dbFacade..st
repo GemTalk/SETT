@@ -1,5 +1,5 @@
 initializing
-initializeFrom: row dbFacade: dbFacade
+initializeFrom: row dbFacade: aDatabaseFacade
 	"See DatabaseFacade >> methodDefinitionsInPackageWithId: for row ordering."
 
 	"SELECT 
@@ -25,11 +25,10 @@ initializeFrom: row dbFacade: dbFacade
 				          ifTrue: [ false ]
 				          ifFalse: [ 
 				             self
-					             decodingError: 'Unknown meta string: <1p>'
-					     	       with: isMetaString ] ].
+					             error: 'Unknown meta string: ' , isMetaString printString ] ].
 	sourceCode := (SettStoreBlob
 		               ofType: (row at: 5)
 		               bytes: (row at: 6)
-		               dbFacade: dbFacade) decoded.
+		               dbFacade: aDatabaseFacade) decoded.
 	"There are various obfuscation schemes that yield non-compliant methodss for Tonel format."
 	self updateForMissingSource

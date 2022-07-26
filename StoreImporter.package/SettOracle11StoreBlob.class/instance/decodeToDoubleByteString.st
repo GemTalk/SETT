@@ -1,4 +1,4 @@
-private
+converting - private
 decodeToDoubleByteString
 	| inputString |
 	inputString := self decodeToByteString.

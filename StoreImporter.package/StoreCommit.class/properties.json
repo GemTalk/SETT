@@ -8,9 +8,9 @@
 	"instvars" : [
 		"pundleVersion",
 		"comment",
-		"databaseFacade",
 		"destinationConfiguration",
-		"userMap"
+		"userMap",
+		"dbFacade"
 	],
 	"name" : "StoreCommit",
 	"type" : "normal"

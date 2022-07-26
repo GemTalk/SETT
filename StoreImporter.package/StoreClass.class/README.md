@@ -1,1 +1,0 @@
-I represent a class that was previously stored in Store.

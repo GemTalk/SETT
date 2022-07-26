@@ -6,7 +6,7 @@ SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code fr
 
 ## Pre-requisites
 
-1. Smalltalk: SETT 2.0 has been tested on Pharo 10.
+1. Smalltalk: SETT 2.x has been tested on Pharo 10.
 2. Linux:  SETT has been tested on Ubuntu 18.04.  It should work on other Linux distributions as well
 3. Git: You need to have git installed on the machine that you're running SETT from.
 4. Disk space: Ensure that you have sufficient disk space to hold the entire contents of your repository.
@@ -30,11 +30,26 @@ Work in progress
 
 Override methods are not currently handled. SETT tries to extract all methods from Store. When it finds a duplicate selector, it rewrites the method prefixing the selector with DUPLICATE_, a collision avoiding number, and another underscore. e.g. DUPLICATE_1_selector
 
-SETT also only extracts and converts shared variables defined for classes. Shared variables associated with other namespaces are NOT extracted.
+SETT extracts three known kinds of shared variables:
+1. Shared variables in a class namespace (mapped to class variables)
+   1a. Shared variables in a package that defines the corresponding class are added to the class definition.
+   1b. Shared variables in a package that doesn't define the corresponding class are added to the class
+       via a non-standard tonel technique of a class variable in a class extension.
+2. Shared variables in a non-class namespace (mapped to pool dictionaries)
+   TO DO: currently, any non-class namespace other than Root and Root.Smalltalk will be mapped to a SharedPool
+      subclass definition with the name of the namespace. SETT should only do this for namespaces actually declared
+      in the extracted packages. All shared variables in undeclared namespaces should be treated as stray shared variables.
+3. Stray shared variables (added as an extension to a fictional class with the namespace's name, similar to 1b above)
 
 The length of time to extract from the Store repository can be long. It depends on how many package versions are selected from the specified time range and the size of the code in them. Extracting the entire GBS Store repository extracted 5300 package versions and took half a day to run.
 
-If there is more than one top-level bundle in the Store repository, the versions are all sorted chronologically and written out in order. The indivdual projects in the Store repository are not very accessible, since one commit can be for one project and the next commit for a different one. The git log allows one to find the version one wishes, but not so much to explore what was extracted when the list of projects is not already known.
+If there is more than one top-level(*) pundle in the Store repository, the versions are all sorted chronologically and written out in order. The indivdual projects in the Store repository are not very accessible, since one commit can be for one project and the next commit for a different one. The git log allows one to find the version one wishes, but not so much to explore what was extracted when the list of projects is not already known.
+
+[(*) A top-level pundle is defined as any version of a package or bundle which is not contained in a published version of some other bundle. Consider a Store database with a bundle named Project, comprised of packages A, B, and C. If SETT were to only extract the published versions of Project, it would thereby ignore any published versions of A, B, or C which were not published into a version of Project. So, if SETT finds any version of A, B, or C not contained in a version of Project, it extracts all versions of that package (or bundle). 
+
+The Destination Configuration attribute #separateGitRepos comes in handy here since it will extract all versions of each top-level pundle into a sub-directory with the corresponding name. In this example, there would be <rowanProjectName>/Project, <rowanProjectName>/A, <rowanProjectName>/B, and <rowanProjectName>/C directorys, each containing all published versions of their respective pundle.
+
+In the absence of separate repos, all versions of each are still extracted, but they are interleaved chronologically with all other pundle versions in one repo. This makes it difficult find specific versions of the nested pundles. Extracting to a single repo is best for extracting exactly one top-level pundle name.]
 
 Store repositories often hold multiple projects, so extracting all of them can be messy and time consuming. Messy, since the git history interleaves the commits from different projects according to when each was checked in to Store. You can specify patterns in the source configuration to restrict the top-level pundles to those that correspond to a single project. e.g. #('GBS*') matches everything for GBS. The default pattern set is #("*'), matching everything.
 

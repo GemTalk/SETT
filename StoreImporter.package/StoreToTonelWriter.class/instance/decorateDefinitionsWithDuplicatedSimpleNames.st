@@ -5,7 +5,10 @@ decorateDefinitionsWithDuplicatedSimpleNames
 	 *and* we can have extension methods to classes with the same simple name.
 	
 	 Annotate their properties with a 'sett transient' value with the full name,
-	 so we can properly write them out without conflict."
+	 so we can properly write them out without conflict.
+	
+	 NOTE: this method correctly gets critiqued as a long method. In my opinion,
+	 splitting it would would lose coherence and hide what it's doing."
 
 	| classDefsByName classDefsBySuperclassName |
 	classDefsByName := Dictionary new.

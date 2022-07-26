@@ -4,7 +4,7 @@ findAllStorePublishes
 	| storeRepository |
 	logger log: 'Finding bundle and package versions'.
 	storeRepository := SettStoreRepository
-		                   forDatabase: databaseFacade
+		                   forDatabase: dbFacade
 		                   withLogger: logger.
 	storeRepository logTotalsTo: logger.
 	storePublishes := StoreCommitList

@@ -1,3 +1,3 @@
 converting - private
 decodeToByteString
-	^ blobBytes
+	^ self subclassResponsibility

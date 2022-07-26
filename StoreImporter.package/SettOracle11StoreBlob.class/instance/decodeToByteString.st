@@ -1,3 +1,3 @@
-private
+converting - private
 decodeToByteString
 	^ blobBytes asString

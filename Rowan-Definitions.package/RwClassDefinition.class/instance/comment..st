@@ -1,3 +1,3 @@
 accessing
 comment: aString
-  properties at: 'comment' put: aString
+  self propertyAt: 'comment' put: aString

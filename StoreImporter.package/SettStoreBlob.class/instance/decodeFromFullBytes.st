@@ -1,4 +1,4 @@
-converting
+converting - private
 decodeFromFullBytes
 	blobType = 2
 		ifTrue: [ ^ self decodeToByteString ].

@@ -1,4 +1,4 @@
 accessing
 name: aString
 
-	properties at: 'name' put: aString
+	self propertyAt: 'name' put: aString

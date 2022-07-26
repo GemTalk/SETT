@@ -1,12 +1,12 @@
 instance creation
-fromRow: row dbFacade: dbFacade
+fromRow: row dbFacade: aDatabaseFacade
 	"See DatabaseFacade >> classDefinitionsInPackageWithId: for column order."
 
 	| definitionBlob instance comment className superclassName |
 	definitionBlob := SettStoreBlob
 		ofType: (row at: 7)
 		bytes: (row at: 8)
-		dbFacade: dbFacade.
+		dbFacade: aDatabaseFacade.
 	instance := SettClassDefinitionParser parse: definitionBlob decoded.
 	className := (SettClassDefinitionParser
 		parse: (row at: 3)
@@ -21,7 +21,7 @@ fromRow: row dbFacade: dbFacade
 	comment := (row at: 5)
 		ifNil: [ '' ]
 		ifNotNil:
-			[ :blobType | (SettStoreBlob ofType: blobType bytes: (row at: 6) dbFacade: dbFacade) decoded ].
+			[ :blobType | (SettStoreBlob ofType: blobType bytes: (row at: 6) dbFacade: aDatabaseFacade) decoded ].
 	instance
 		initializeNamespace;
 		classComment: comment;

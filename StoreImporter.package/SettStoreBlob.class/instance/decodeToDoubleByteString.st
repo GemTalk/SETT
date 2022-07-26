@@ -1,3 +1,3 @@
 converting - private
 decodeToDoubleByteString
-	^ SettDoubleByteBlobDecoder decode: blobBytes
+	^ self subclassResponsibility

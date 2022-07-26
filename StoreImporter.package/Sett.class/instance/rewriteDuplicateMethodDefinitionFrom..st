@@ -8,7 +8,8 @@ rewriteDuplicateMethodDefinitionFrom: aSettDuplicateSelectorError
 	logger log: aSettDuplicateSelectorError description.
 	methodDefinition := aSettDuplicateSelectorError methodDefinition.
 	selectors := aSettDuplicateSelectorError existingSelectors.
-	"If there should happen to be more than 1,000 implementors, fail so a developer can study the beast."
+	candidate := nil.	"Make the code critic happy"
+	"If there should happen to be more than 1,000 implementations, fail so a developer can study the beast."
 	(1 to: 999) detect: [ :index | 
 		candidate := 'DUPLICATE_' , index printString , '_'.
 		(selectors includes: candidate , methodDefinition selector) not ].

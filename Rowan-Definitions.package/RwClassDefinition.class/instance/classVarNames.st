@@ -1,3 +1,3 @@
 accessing
 classVarNames
-  ^ properties at: 'classvars'
+  ^ self propertyAt: 'classvars'

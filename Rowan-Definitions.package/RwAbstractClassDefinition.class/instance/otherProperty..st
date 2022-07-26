@@ -1,3 +1,3 @@
 private
 otherProperty: aProperty
-	^ properties at: aProperty ifAbsent: nil 
+	^ self propertyAt: aProperty ifAbsent: nil 

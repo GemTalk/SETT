@@ -1,4 +1,4 @@
 accessing
 instVarNames
 
-	^ properties at: 'instvars'
+	^ self propertyAt: 'instvars'

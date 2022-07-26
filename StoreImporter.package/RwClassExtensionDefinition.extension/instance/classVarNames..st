@@ -1,4 +1,4 @@
 *StoreImporter
 classVarNames: anArrayOfClassVarNames
 
-	^ properties at: 'classvars' put: anArrayOfClassVarNames
+	^ self propertyAt: 'classvars' put: anArrayOfClassVarNames

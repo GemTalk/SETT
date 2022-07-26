@@ -8,14 +8,12 @@
 	"instvars" : [
 		"sourceConfiguration",
 		"destinationConfiguration",
-		"databaseFacade",
-		"gitRepository",
 		"storePublishes",
 		"logger",
-		"rowanDirectories",
 		"initialDateAndTime",
 		"endDateAndTime",
-		"repositoryCreationStrategy"
+		"repositoryCreationStrategy",
+		"dbFacade"
 	],
 	"name" : "Sett",
 	"type" : "normal"

@@ -1,4 +1,4 @@
-private
+fetching -private
 fetchBlobContinuations
 	[ | row |
 	row := dbFacade rawBlobWithId: blobType negated.

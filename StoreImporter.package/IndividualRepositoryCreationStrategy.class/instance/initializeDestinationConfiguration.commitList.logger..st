@@ -1,4 +1,4 @@
-directory creation
+initialization
 initializeDestinationConfiguration: aSettDestinationConfiguration commitList: aStoreCommitList logger: aLogger
 
 	rowanDirectoriesMap := Dictionary new.
