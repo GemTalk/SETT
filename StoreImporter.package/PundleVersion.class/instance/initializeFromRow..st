@@ -1,4 +1,4 @@
-initialization
+initializing
 initializeFromRow: row
 	"List and order of fields must agree with #columnNamesString."
 

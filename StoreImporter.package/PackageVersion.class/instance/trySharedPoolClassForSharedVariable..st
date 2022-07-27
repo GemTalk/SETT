@@ -1,12 +1,15 @@
 updating
 trySharedPoolClassForSharedVariable: aSharedVariableDefinition
 	"Answer whether the shared variable definition can be resolved
-	 via a new SharedPool subclass."
+	 via a new SharedPool subclass. This requires there be a namespace
+	 defined in one of the packages for the current Store commit.
+	 If we didn't define a namespace for it, we cannot create a
+	 SharedPool subclass for it."
 
 	| className namespace resolution definition |
 	className := aSharedVariableDefinition classFullName.
 	((allClassNames includes: className)
-		or: [(self restrictedSharedPoolNamespaces includes: className definitionString)])
+		or: [(allNamespaceNames includes: className definitionString) not])
 			ifTrue: [ ^ false ].
 
 	resolution := 'Adding to existing Shared Pool class definition.'.

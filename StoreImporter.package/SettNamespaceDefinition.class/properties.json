@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "StoreImporter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"environment",
+		"definition"
+	],
+	"name" : "SettNamespaceDefinition",
+	"type" : "normal"
+}

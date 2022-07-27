@@ -7,8 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"dbFacade",
+		"namespaceDefinitions",
 		"classDefinitions",
 		"classExtensions",
+		"allNamespaceNames",
 		"allClassNames",
 		"problematicSharedVariables"
 	],

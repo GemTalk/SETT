@@ -9,10 +9,8 @@
 		"timestamp",
 		"version",
 		"username",
-		"blessingLevel",
 		"primaryKey",
 		"pundleName",
-		"comment",
 		"logger"
 	],
 	"name" : "PundleVersion",

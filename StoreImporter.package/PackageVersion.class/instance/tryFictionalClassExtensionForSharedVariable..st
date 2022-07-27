@@ -1,7 +1,8 @@
 updating
 tryFictionalClassExtensionForSharedVariable: aSharedVariableDefinition
 	"Answer whether the shared variable definition can be resolved
-	 via a class extension to a fictional class. See #restrictedSharedPoolNamespaces.
+	 via a class extension to a fictional class. Any namespace not known
+	 to any of the packages in a given Store Commit will get this treatment.
 	 If this package already has such a class extension, use it.
 	 Otherwise, create a new class extenstion."
 

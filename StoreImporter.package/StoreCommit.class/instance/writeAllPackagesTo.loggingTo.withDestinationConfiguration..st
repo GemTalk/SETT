@@ -1,12 +1,13 @@
 writing
 writeAllPackagesTo: rowanDirectories loggingTo: aSettLogger withDestinationConfiguration: aDestinationConfiguration
 
-	| allPackageNames pundleName allClassNames deferredPackageVersions |
+	| allPackageNames pundleName allClassNames allNamespaceNames deferredPackageVersions |
 	allPackageNames := OrderedCollection new.
 	pundleName := pundleVersion pundleName.
 	destinationConfiguration := aDestinationConfiguration.
 	userMap := aDestinationConfiguration userMapping.
 	allClassNames := Set new: 1000.
+	allNamespaceNames := Set new: 100.
 	deferredPackageVersions := OrderedCollection new.
 
 	self allPackageVersionsDo: [ :packageVersion | 
@@ -16,11 +17,13 @@ writeAllPackagesTo: rowanDirectories loggingTo: aSettLogger withDestinationConfi
 		copy := packageVersion copy.
 		copy
 			fetchContentsWithLogger: aSettLogger
-			allClassNames: allClassNames.
+			allClassNames: allClassNames
+			allNamespaceNames: allNamespaceNames.
 		copy hasUnfinishedBusiness
 			ifTrue: [ 
 				deferredPackageVersions add: copy.
-				aSettLogger debug: 'Deferred writing contents of ' , copy printString ]
+				aSettLogger debug:
+					'Deferred writing contents of ' , copy printString ]
 			ifFalse: [ 
 				tonelWriter := destinationConfiguration tonelWriterClass
 					               writePackage: copy

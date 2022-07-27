@@ -17,10 +17,13 @@ addSharedVariable: aSharedVariableDefinition
 	| definition |
 	definition := classDefinitions
 		              at: aSharedVariableDefinition classFullName
-		              ifAbsent: [ "If it doesn't reference a class defined in this package, set it aside for later."
-			              problematicSharedVariables add: aSharedVariableDefinition.
-			              ^ logger log:
-				                'Warning!: Shared Variable '
-				                , aSharedVariableDefinition signature
-				                , ' ignored as possible pool variable. Class not found.' ].
+		              ifAbsent: [ "If it matches a namespace defined in this package, we can add a SharedPool subclass for it."
+			              ((namespaceDefinitions includesKey: aSharedVariableDefinition classFullName definitionString)
+				               and: [self trySharedPoolClassForSharedVariable: aSharedVariableDefinition ])
+								ifTrue: [ ^self ]
+								ifFalse: [ "If it doesn't reference a class or a namespace defined in this package, set it aside for later."
+					              problematicSharedVariables add: aSharedVariableDefinition.
+					              ^ logger log: 'Warning!: Shared Variable '
+						                , aSharedVariableDefinition signature ,
+						                ' ignored as possible pool variable. Class not found.' ] ].
 	definition addClassVariable: aSharedVariableDefinition
