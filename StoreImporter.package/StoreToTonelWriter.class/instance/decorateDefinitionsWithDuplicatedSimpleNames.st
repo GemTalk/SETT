@@ -8,7 +8,7 @@ decorateDefinitionsWithDuplicatedSimpleNames
 	 so we can properly write them out without conflict.
 	
 	 NOTE: this method correctly gets critiqued as a long method. In my opinion,
-	 splitting it would would lose coherence and hide what it's doing."
+	 splitting it would would lose coherence and obscure what it's doing."
 
 	| classDefsByName classDefsBySuperclassName |
 	classDefsByName := Dictionary new.

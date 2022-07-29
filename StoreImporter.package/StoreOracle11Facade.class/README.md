@@ -1,0 +1,1 @@
+I handle connections to an Oracle 11 Store database

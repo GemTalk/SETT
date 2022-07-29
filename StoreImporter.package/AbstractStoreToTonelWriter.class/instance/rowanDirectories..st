@@ -1,0 +1,3 @@
+initializing
+rowanDirectories: aRowanDirectoryStructure
+	rowanDirectories := aRowanDirectoryStructure

@@ -1,0 +1,1 @@
+I represent a namespace definition that was previously stored in Store.

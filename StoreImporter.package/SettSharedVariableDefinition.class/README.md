@@ -1,0 +1,1 @@
+I represent a shared variable that was previously stored in Store.

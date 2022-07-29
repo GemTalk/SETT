@@ -14,10 +14,10 @@ createRwPackageDefsForAllNamespaces
 				ifTrue: [ 
 					rwPackageName := '_' join: { 
 							                 ('_' join: eachNamespace).
-							                 package pundleName } ]
+							                 packageVersion pundleName } ]
 				ifFalse: [ 
 					packagePrefix := self fetchPrefixForNamespace: eachNamespace.
-					rwPackageName := packagePrefix , package pundleName ].
+					rwPackageName := packagePrefix , packageVersion pundleName ].
 			rwPackages add: rwPackageName.
 			rwPackageDef := RwPackageDefinition newNamed: rwPackageName.
 			self updateCategoryFor: classDefs to: rwPackageName.

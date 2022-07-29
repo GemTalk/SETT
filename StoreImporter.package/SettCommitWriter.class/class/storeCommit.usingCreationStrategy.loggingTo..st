@@ -3,6 +3,6 @@ storeCommit: aStoreCommit usingCreationStrategy: aRepositoryCreationStrategy log
 
 	^ self new
 		  initializeWithStoreCommit: aStoreCommit
-		  repositoryCreationStrategy: aRepositoryCreationStrategy
-		  logger: aSettLoger;
+			  repositoryCreationStrategy: aRepositoryCreationStrategy
+			  logger: aSettLoger;
 		  yourself

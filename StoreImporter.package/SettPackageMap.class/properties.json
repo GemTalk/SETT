@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "RichardSargent 7/29/2022 10:21",
 	"super" : "Object",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
@@ -8,8 +8,7 @@
 	"instvars" : [
 		"classes",
 		"extensions",
-		"prefix",
-		"definitions"
+		"prefix"
 	],
 	"name" : "SettPackageMap",
 	"type" : "normal"

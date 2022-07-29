@@ -1,0 +1,1 @@
+I decode BLOBs from Oracle 11 Store databases

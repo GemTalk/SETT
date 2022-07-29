@@ -13,7 +13,10 @@ runGitWithArguments: argArray
 			process isSuccess
 				ifTrue: [ ^ outString ]
 				ifFalse: [ "OSSUnixProcessExitStatus has a nice #printOn: "
-					self error: 'Git command failed. Exit status: '
-							, process exitStatusInterpreter printString, '  stdout: '
-							, outString  , '  stderr: '
-							, errString ] ]
+					| errorResult |
+					errorResult := 'Git command failed. Exit status: '
+					               , process exitStatusInterpreter printString
+					               , '  stdout: ' , outString , '  stderr: '
+					               , errString.
+					logger log: errorResult.
+					self error: errorResult ] ]

@@ -1,3 +1,3 @@
-accessing
+initializing
 packageVersion: aPackageVersion
 	packageVersion := aPackageVersion

@@ -1,20 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "RichardSargent 7/28/2022 17:50",
 	"super" : "AbstractStoreToTonelWriter",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"package",
-		"commit",
-		"rowanDirectories",
-		"destinationConfiguration",
 		"packageMap",
-		"namespaceMap",
-		"packageDefs",
-		"logger",
-		"rwPackages"
+		"namespaceMap"
 	],
 	"name" : "NamespaceMappingStoreToTonelWriter",
 	"type" : "normal"

@@ -1,3 +1,0 @@
-accessing
-packagesWritten
-	^ rwPackages asArray

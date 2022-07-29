@@ -1,5 +1,5 @@
 action
 sortClassExtensionsIntoNamespaces
 	self
-		sortDefinitionsIntoNamespaceWith: package classExtensions
+		sortDefinitionsIntoNamespaceWith: packageVersion classExtensions
 		isDefinition: false

@@ -1,1 +1,2 @@
-I am responsible for taking a StoreClass and writing this in Tonel format on disk.
+Store to Tonel Writer transforms the source code from VisualWorks/Store formats to tonel.
+This variant preserves as much fidelity with VisualWorks as it can.

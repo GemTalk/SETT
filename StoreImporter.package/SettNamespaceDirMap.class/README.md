@@ -1,1 +1,1 @@
-I represent a mapping of a namespace to a mangled directory name.
+I represent a mapping of a namespace to a transformed package file name. Refer to the class side methods for details.

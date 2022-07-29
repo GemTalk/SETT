@@ -1,19 +1,11 @@
 {
-	"commentStamp" : "AaronBlakeman 3/19/2018 09:25",
+	"commentStamp" : "RichardSargent 7/28/2022 17:04",
 	"super" : "AbstractStoreToTonelWriter",
 	"category" : "StoreImporter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"packageVersion",
-		"commit",
-		"rowanDirectories",
-		"destinationConfiguration",
-		"packageDefs",
-		"logger",
-		"rwPackages"
-	],
+	"instvars" : [ ],
 	"name" : "StoreToTonelWriter",
 	"type" : "normal"
 }

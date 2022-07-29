@@ -1,5 +1,7 @@
 action
 createRowanPackageDefs
+	"This class only works with one package,
+	 but other variants might produce multiple tonel packages from on VisualWorks package."
 
 	| rwPackageDef rwPackageName |
 	self decorateDefinitionsWithDuplicatedSimpleNames.
