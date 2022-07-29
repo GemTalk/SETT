@@ -42,7 +42,7 @@ writeAllPackagesTo: rowanDirectories loggingTo: aSettLogger withDestinationConfi
 			               withDestinationConfiguration:
 			               destinationConfiguration
 			               withLogger: aSettLogger.
-		allPackageNames addAll: tonelWriter packagesWritten ].
+		allPackageNames addAll: tonelWriter "halt" packagesWritten ].
 
 	self
 		writeProjectFor: pundleName
