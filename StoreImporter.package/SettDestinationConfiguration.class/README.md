@@ -26,19 +26,17 @@ When separateGitRepos is true, the directory structure will be shaped like this:
 
 Internal Representation and Key Implementation Points.
 
-    Instance Variables
-	branchName:		<String>		The name of the git branch
-	isNewRepository:		<Boolean>		Create and initialize git for the extract.
-	repositoryBeginDate:		<DateAndTime>		Oldest timestamp to extract.
-	repositoryPathString:		<String>		Latest timestamp to extract.
-	rowanConfigsDirectoryName:		<String>		Subdirectory name for Rowan config files.
-	rowanProjectName:		<String>		The name of the project.
-	rowanSourcesDirectoryName:		<String>		Subdirectory name for Rowan source code files.
-	rowanSpecsDirectoryName:		<String>		Subdirectory name for Rowan spec files.
-	rowanSubdirectoryName:		<String>		Subdirectory name for Rowan artefacts.
-	separateGitRepos:		<Boolean>		Whether each top-level pundle name should be a separate git repository.
-	tonelWriterClass:		<Behavior>		Class to use for writing out tonel format files.
-	userMapping:		<SettUserMap>		Instructions for mapping Store users to git users.
-
-
-    Implementation Points
+Instance Variables:
+	branchName						<String>			The name of the git branch
+	classNameDotReplacement		<String>			Replacement for '.' in fully qualified names (defaults to '.' ==> No replacement)
+	isNewRepository					<Boolean>			Create and initialize git for the extract.
+	repositoryBeginDate			<DateAndTime>	Oldest timestamp to extract.
+	repositoryPathString			<String>			Latest timestamp to extract.
+	rowanConfigsDirectoryName	<String>			Subdirectory name for Rowan config files.
+	rowanProjectName				<String>			The name of the project.
+	rowanSourcesDirectoryName	<String>			Subdirectory name for Rowan source code files.
+	rowanSpecsDirectoryName		<String>			Subdirectory name for Rowan spec files.
+	rowanSubdirectoryName			<String>			Subdirectory name for Rowan artefacts.
+	separateGitRepos				<Boolean>			Whether each top-level pundle name should be a separate git repository.
+	tonelWriterClass				<Behavior>		Class to use for writing out tonel format files.
+	userMapping						<SettUserMap>		Instructions for mapping Store users to git users.

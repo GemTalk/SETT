@@ -7,12 +7,13 @@ initialize
 	isNewRepository := true.
 	separateGitRepos := false.
 	branchName := 'fromStore'.
+	classNameDotReplacement := '.'.	"No replacement needed"
 
+	tonelWriterClass := StoreToTonelWriter.
+	debugLogging := false.
+	
 	"The following configuration parameters should not be changed"
 	rowanSubdirectoryName := 'rowan'.
 	rowanSourcesDirectoryName := 'sources'.
 	rowanConfigsDirectoryName := 'configs'.
 	rowanSpecsDirectoryName := 'specs'.
-
-	tonelWriterClass := StoreToTonelWriter.
-	debugLogging := false.

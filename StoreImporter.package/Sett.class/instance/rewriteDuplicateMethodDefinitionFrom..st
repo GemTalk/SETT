@@ -5,7 +5,7 @@ rewriteDuplicateMethodDefinitionFrom: aSettDuplicateSelectorError
 	 is the correct one."
 
 	| methodDefinition selectors candidate |
-	logger log: aSettDuplicateSelectorError description.
+	logger log: 'Warning!: ' , aSettDuplicateSelectorError description.
 	methodDefinition := aSettDuplicateSelectorError methodDefinition.
 	selectors := aSettDuplicateSelectorError existingSelectors.
 	candidate := nil.	"Make the code critic happy"
