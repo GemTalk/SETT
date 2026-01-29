@@ -10,7 +10,7 @@ SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code fr
 2. Linux:  SETT has been tested on Ubuntu 18.04.  It should work on other Linux distributions as well
 3. Git: You need to have git installed on the machine that you're running SETT from.
 4. Disk space: Ensure that you have sufficient disk space to hold the entire contents of your repository.
-5. Store access: You must provide credentials for a Store user that has access to the repository to be imported.  Ideally, this user will be a read-only user.
+5. Store access: You must provide credentials for a Store user that has access to the repository to be exported.  Ideally, this user will be a read-only user.
 
 ## Installation for use on Postgres backed Store DB
 
@@ -54,7 +54,7 @@ In the absence of separate repos, all versions of each are still extracted, but 
 Store repositories often hold multiple projects, so extracting all of them can be messy and time consuming. Messy, since the git history interleaves the commits from different projects according to when each was checked in to Store. You can specify patterns in the source configuration to restrict the top-level pundles to those that correspond to a single project. e.g. #('GBS*') matches everything for GBS. The default pattern set is #("*'), matching everything.
 
 
-# Performing the import 
+# Performing the export 
 
 The following provides examples for using SETT to export from a Postgres based Store database.  
 
