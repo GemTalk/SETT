@@ -1,13 +1,19 @@
 # Overview
 
-SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code from Store and write into the Tonel file format used by Rowan and managed using Git. 
+SETT (Store Export to Tonel Tools) is a set of tools to export Smalltalk code from Store and write into the Tonel file format used by Rowan and managed using Git.
+
+Version 2.x of SETT can be used to extract multiple disconnected bundles or packages into multiple git repositories. As with version 1.x, it can be used to extract the complete history of a specific bundle or package into a single git repository.
+The term disconnected means any package or bundle version that is not contained in another bundle gets extracted to its own git repository with all its versions or, in the case of a bundle, with all its versions and all the bundles and packages in each version.
+
+A large project, such as the source code for GemBuilder for Smalltalk (a.k.a GBS) can take multiple or even many hours. GBS took on the order of 24 hours to export.
+
 
 # Install and Run SETT
 
 ## Pre-requisites
 
-1. Smalltalk: SETT 2.x has been tested on Pharo 10.
-2. Linux:  SETT has been tested on Ubuntu 18.04.  It should work on other Linux distributions as well
+1. Smalltalk: SETT 2.x has been tested on Pharo 13.
+2. Linux:  SETT has been tested on Ubuntu 22.04.  It should work on other Linux distributions as well
 3. Git: You need to have git installed on the machine that you're running SETT from.
 4. Disk space: Ensure that you have sufficient disk space to hold the entire contents of your repository.
 5. Store access: You must provide credentials for a Store user that has access to the repository to be exported.  Ideally, this user will be a read-only user.
@@ -21,14 +27,36 @@ Metacello new
   load.
 ```
 
+You can also load from a locally cloned repository.
+e.g.
+```smalltalk
+Metacello new 
+  baseline: 'Sett';
+  repository: 'filetree:/home/somebody/gitProjects/SETT';
+  load.
+```
+
 ## Installation for use on Oracle backed Store DB
 
-Work in progress
+While there is a class specific for reading from an Oracle-based Store database, it is a work in progress and not known to work.
+Set the Source Configuration dbType to 'oracle'.
+
+## Installation for use with PostgrSQL backed Store DB
+
+SETT development was done against a PostgreSQL Store DB. It is the most tested and is the default in the absence of specifying an oracle dbType.
+
+The secltion of database facade is determined in Sett>>#initializeDatabaseFacade.
+There is a facade class for Sqlite3, but it should be considered incomplete and untested.
 
 
 # Caveats
 
+In Pharo 10, DateAndTime would parse a typical Unix Date and time stamp string, such as 'Jan 1 1970'. However, Pharo 13 requires Date and Time to be specified using the ISO date format for date alone and as much of the time portion of a Date and time specification.
+
+
 Override methods are not currently handled. SETT tries to extract all methods from Store. When it finds a duplicate selector, it rewrites the method prefixing the selector with DUPLICATE_, a collision avoiding number, and another underscore. e.g. DUPLICATE_1_selector
+
+SETT extracts some VW specific aspects using VW-specific properties. An example is class namespaces are preserved in the extract.
 
 SETT extracts three known kinds of shared variables:
 1. Shared variables in a class namespace (mapped to class variables)
@@ -117,11 +145,11 @@ source
 dest
  repositoryPathString: './StoreExport';
  rowanProjectName: 'StoreExport';
- userMapping: settUserMap ;
+ userMapping: settUserMap ;	"An instance of SettUserMap. See the example methods on its class size."
  namespaceMapping: settNamespaceMap.
 
 Sett
-  readCodePublishedSince: (DateAndTime fromString: 'Jan 1 2018')
+  readCodePublishedSince: (DateAndTime fromString: '2018-01-01')
   from: source
   andWriteTo: destination
 ```
