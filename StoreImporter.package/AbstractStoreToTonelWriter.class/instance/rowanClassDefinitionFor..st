@@ -15,7 +15,6 @@ rowanClassDefinitionFor: classDefinition
 		
 	rwClassDefinition gs_constraints: classDefinition gs_constraints.
 	rwClassDefinition gs_options: classDefinition gs_options.
-	rwClassDefinition propertyAt: 'originalCategory' put: classDefinition originalCategory.
 	rwClassDefinition propertyAt: 'vw_namespace' put: (classDefinition vw_namespace).
 
 	"Replace the simple names which have namespace conflicts."

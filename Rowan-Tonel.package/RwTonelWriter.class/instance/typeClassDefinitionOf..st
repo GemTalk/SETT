@@ -30,10 +30,6 @@ typeClassDefinitionOf: aClassDefinition
 		definition
 			at: #gs_options
 			put: aClassDefinition gs_options asArray ].
-	(aClassDefinition otherProperty: #originalCategory) ifNotNil: [ 
-		definition
-			at: #originalCategory
-			put: (aClassDefinition otherProperty: #originalCategory) ].
 	(aClassDefinition otherProperty: #vw_namespace) ifNotNil: [ 
 		definition
 			at: #vw_namespace

@@ -20,7 +20,8 @@ createRwPackageDefsForAllNamespaces
 					rwPackageName := packagePrefix , packageVersion pundleName ].
 			rwPackages add: rwPackageName.
 			rwPackageDef := RwPackageDefinition newNamed: rwPackageName.
-			self updateCategoryFor: classDefs to: rwPackageName.
+"Rowan 1 needed class category to be the same as the package name. No longer needed.
+			self updateCategoryFor: classDefs to: rwPackageName."
 			self updateVwNamespace: eachNamespace for: classDefs.
 			self
 				addClasses: classDefs to: rwPackageDef;
