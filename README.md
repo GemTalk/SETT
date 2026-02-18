@@ -154,3 +154,21 @@ Sett
   andWriteTo: destination
 ```
 
+
+# Pharo Version Compatibility
+
+SETT V1.x was first developed in Pharo 6. 
+V2.0 was developed and tested in Pharo 10.
+V2.0 was also tested in Pharo 13.
+
+Pharo 13 has some differences beyond the DateAndTime fromString: anomaly mentioned above. (The format of the string is different.)
+In addition, when you load SETT in Pharo 13, you will notice that the Petit Parser 2 project shows uncommitted changes.
+Some time between Pharo 10 and 13, the RBProgramNode was renamed to OCProgramNode. For compatibilty, the association 
+for RBProgramNode was left in place but pointing to the new OCProgramNode. This allows Petit Parser 2 to load without a problem.
+However, Pharo shows the consequence of this renaming as a change in the petitparser2 repository.
+Our belief is that the maintainers of Petit Parser 2 have chosen not to update to address this likely because it 
+would limit Petit Parser 2's compatibility with older Pharo versions.
+
+Two projects that SETT depends on show Detached HEAD because SETT relis on specific versions of them.
+While there might be never versions of those projects, SETT works properly as it is.
+
